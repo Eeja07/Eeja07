@@ -53,9 +53,9 @@ Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Eeja07&show_icons=true&bg_color=0d1117&title_color=38bdf8&icon_color=60a5fa&text_color=8b949e&border_color=30363d" height="150" alt="GitHub Stats" />
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Eeja07&show_icons=true&bg_color=0d1117&title_color=38bdf8&icon_color=60a5fa&text_color=8b949e&border_color=30363d" height="150" alt="GitHub Stats" />
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eeja07&layout=compact&bg_color=0d1117&title_color=38bdf8&text_color=8b949e&border_color=30363d" height="150" alt="Top Languages" />
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Eeja07&layout=compact&bg_color=0d1117&title_color=38bdf8&text_color=8b949e&border_color=30363d" height="150" alt="Top Languages" />
 
 <br/><br/>
 
@@ -67,10 +67,34 @@ Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
 
 ## Connect
 
-* **Portfolio:** [portfolio.eeja.fun](https://portfolio.eeja.fun)
-* **LinkedIn:** [linkedin.com/in/mahijapradipta](https://linkedin.com/in/mahijapradipta)
-* **Email:** [mahijapradipta86@gmail.com](mailto:mahijapradipta86@gmail.com)
-* **GitHub:** [github.com/Eeja07](https://github.com/Eeja07)
+<div align="center">
+
+<a href="https://portfolio.eeja.fun">
+  <img src="https://img.shields.io/badge/Portfolio-portfolio.eeja.fun-0d1117?style=for-the-badge&logo=google-chrome&logoColor=38bdf8&labelColor=161b22" alt="Portfolio" />
+</a>
+&nbsp;
+<a href="https://linkedin.com/in/mahijapradipta">
+  <img src="https://img.shields.io/badge/LinkedIn-Mahija_Ibad_Pradipta-0d1117?style=for-the-badge&logo=linkedin&logoColor=38bdf8&labelColor=161b22" alt="LinkedIn" />
+</a>
+&nbsp;
+<a href="mailto:mahijapradipta86@gmail.com">
+  <img src="https://img.shields.io/badge/Email-mahijapradipta86@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=38bdf8&labelColor=161b22" alt="Email" />
+</a>
+&nbsp;
+<a href="https://github.com/Eeja07">
+  <img src="https://img.shields.io/badge/GitHub-Eeja07-0d1117?style=for-the-badge&logo=github&logoColor=38bdf8&labelColor=161b22" alt="GitHub" />
+</a>
+
+</div>
+
+<br/>
+
+* 🌐 **Portfolio:** [portfolio.eeja.fun](https://portfolio.eeja.fun)
+* 💼 **LinkedIn:** [linkedin.com/in/mahijapradipta](https://linkedin.com/in/mahijapradipta)
+* ✉️ **Email:** [mahijapradipta86@gmail.com](mailto:mahijapradipta86@gmail.com)
+* 🐙 **GitHub:** [github.com/Eeja07](https://github.com/Eeja07)
+
+<br/>
 
 <div align="center">
   <sub>Mahija Ibad Pradipta • Connected Systems &amp; Software</sub>
