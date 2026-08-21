@@ -1,54 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
   <defs>
     <linearGradient id="hdr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#070b14"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
     </linearGradient>
     <linearGradient id="hdr-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#ec4899"/>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.7"/>
     </linearGradient>
     <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="60%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#818cf8"/>
+      <stop offset="70%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
     </linearGradient>
   </defs>
 
   <style><![CDATA[
     .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   ]]></style>
 
   <!-- Background Card -->
-  <rect x="2" y="2" width="896" height="126" rx="12" fill="url(#hdr-bg)" stroke="url(#hdr-border)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="896" height="126" rx="10" fill="url(#hdr-bg)" stroke="url(#hdr-border)" stroke-width="1.2"/>
 
   <!-- Left Content -->
   <g transform="translate(36, 34)">
     <text x="0" y="0" class="font-sans" font-size="28" font-weight="800" fill="url(#name-grad)">Hi, I'm Mahija 👋</text>
-    <text x="0" y="26" class="font-sans" font-size="14" font-weight="500" fill="#94a3b8">Computer Engineering Graduate • Software, Hardware &amp; Intelligent Systems</text>
+    <text x="0" y="26" class="font-sans" font-size="14" font-weight="500" fill="#8b949e">Computer Engineering Graduate • Systems &amp; Software Builder</text>
   </g>
 
-  <!-- Right Pill Badges -->
+  <!-- Pill Badges -->
   <g transform="translate(36, 92)">
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="105" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-      <text x="52" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#cbd5e1">📍 Indonesia</text>
+      <rect x="0" y="0" width="105" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="52" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#c9d1d9">📍 Indonesia</text>
     </g>
     <g transform="translate(115, 0)">
-      <rect x="0" y="0" width="145" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="145" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
       <text x="72" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#38bdf8">🌐 portfolio.eeja.fun</text>
     </g>
     <g transform="translate(270, 0)">
-      <rect x="0" y="0" width="135" height="24" rx="6" fill="#065f46" stroke="#10b981" stroke-width="1"/>
-      <text x="67" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#6ee7b7">✨ Open to Roles</text>
+      <rect x="0" y="0" width="135" height="24" rx="6" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
+      <text x="67" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#38bdf8">✨ Open to Roles</text>
     </g>
   </g>
 
   <!-- Right Decorative Icon Badge -->
   <g transform="translate(810, 65)">
-    <circle cx="0" cy="0" r="32" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
-    <text x="0" y="8" text-anchor="middle" font-size="22">🚀</text>
+    <circle cx="0" cy="0" r="30" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="26" fill="#0f172a"/>
+    <text x="0" y="7" text-anchor="middle" font-size="20">🚀</text>
   </g>
 </svg>

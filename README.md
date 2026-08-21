@@ -120,8 +120,8 @@ Stack: NestJS • Next.js 15 • PostgreSQL • Prisma ORM • Turborepo • Typ
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Eeja07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=38bdf8&icon_color=00e5ff&text_color=94a3b8" height="145" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eeja07&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=a855f7&text_color=94a3b8" height="145" alt="Top Languages" />
+<img src="https://github-readme-stats.vercel.app/api?username=Eeja07&show_icons=true&bg_color=0d1117&title_color=38bdf8&icon_color=60a5fa&text_color=8b949e&border_color=30363d" height="150" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eeja07&layout=compact&bg_color=0d1117&title_color=38bdf8&text_color=8b949e&border_color=30363d" height="150" alt="Top Languages" />
 
 </div>
 

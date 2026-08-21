@@ -1,85 +1,85 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="100%" height="100%">
   <defs>
     <linearGradient id="miv-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#020617"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#090d16"/>
     </linearGradient>
     <linearGradient id="miv-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00e5ff"/>
-      <stop offset="100%" stop-color="#3b82f6"/>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#30363d"/>
     </linearGradient>
   </defs>
 
   <style><![CDATA[
     .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   ]]></style>
 
   <!-- Background Card -->
-  <rect x="2" y="2" width="896" height="156" rx="10" fill="url(#miv-bg)" stroke="url(#miv-border)" stroke-width="1.2"/>
+  <rect x="2" y="2" width="896" height="156" rx="8" fill="url(#miv-bg)" stroke="url(#miv-border)" stroke-width="1"/>
 
   <!-- Left Camera & Streaming Icon -->
   <g transform="translate(36, 35)">
-    <rect x="0" y="0" width="80" height="85" rx="8" fill="#1e293b" stroke="#00e5ff" stroke-width="1.2"/>
+    <rect x="0" y="0" width="80" height="85" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
     <text x="40" y="44" text-anchor="middle" font-size="28">📹</text>
-    <rect x="10" y="58" width="60" height="18" rx="4" fill="#020617" stroke="#00e5ff" stroke-width="0.8"/>
-    <text x="40" y="70" text-anchor="middle" class="font-mono" font-size="8" font-weight="700" fill="#00e5ff">ESP32-CAM</text>
+    <rect x="10" y="58" width="60" height="18" rx="4" fill="#0d1117" stroke="#0284c7" stroke-width="0.8"/>
+    <text x="40" y="70" text-anchor="middle" class="font-mono" font-size="8" font-weight="700" fill="#38bdf8">ESP32-CAM</text>
   </g>
 
   <!-- Connection Arrow -->
   <g transform="translate(126, 75)">
-    <line x1="0" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3"/>
     <polygon points="35,-4 42,0 35,4" fill="#38bdf8"/>
-    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#64748b">MQTT/WSS</text>
+    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#8b949e">MQTT/WSS</text>
   </g>
 
   <!-- Center Architecture Block: Core Services -->
   <g transform="translate(180, 24)">
-    <rect x="0" y="0" width="370" height="110" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="370" height="110" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
     
     <!-- Header -->
-    <rect x="0" y="0" width="370" height="24" rx="8" fill="#1e293b" opacity="0.6"/>
+    <rect x="0" y="0" width="370" height="24" rx="8" fill="#21262d" opacity="0.8"/>
     <text x="14" y="16" class="font-mono" font-size="9" font-weight="700" fill="#38bdf8">MIVION PLATFORM CORE</text>
-    <text x="355" y="16" text-anchor="end" class="font-mono" font-size="8" fill="#64748b">LARAVEL 11 + EMQX</text>
+    <text x="355" y="16" text-anchor="end" class="font-mono" font-size="8" fill="#8b949e">LARAVEL 11 + EMQX</text>
 
     <!-- 3 Internal Service Badges -->
     <g transform="translate(14, 34)">
-      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#f8fafc">⚡ EMQX MQTT Broker</text>
+      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#e6edf3">⚡ EMQX MQTT Broker</text>
 
-      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#f8fafc">📡 Laravel Reverb (WSS)</text>
+      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#e6edf3">📡 Laravel Reverb (WSS)</text>
     </g>
 
     <g transform="translate(14, 70)">
-      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#fb7185">📦 MinIO S3 Storage</text>
+      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8">📦 MinIO S3 Storage</text>
 
-      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#34d399">🤖 FastAPI YOLO Service</text>
+      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8">🤖 FastAPI YOLO Service</text>
     </g>
   </g>
 
   <!-- Connection Arrow -->
   <g transform="translate(560, 75)">
-    <line x1="0" y1="0" x2="35" y2="0" stroke="#10b981" stroke-width="2" stroke-dasharray="3 3"/>
-    <polygon points="35,-4 42,0 35,4" fill="#10b981"/>
-    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#64748b">OTA / FEEDS</text>
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <polygon points="35,-4 42,0 35,4" fill="#38bdf8"/>
+    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#8b949e">OTA / FEEDS</text>
   </g>
 
   <!-- Right Dashboard & Control Block -->
   <g transform="translate(610, 24)">
-    <rect x="0" y="0" width="250" height="110" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1.2"/>
-    <rect x="0" y="0" width="250" height="24" rx="8" fill="#1e293b" opacity="0.6"/>
-    <circle cx="12" cy="12" r="3" fill="#ef4444"/>
-    <circle cx="20" cy="12" r="3" fill="#f59e0b"/>
-    <circle cx="28" cy="12" r="3" fill="#10b981"/>
-    <text x="40" y="16" class="font-mono" font-size="8.5" fill="#94a3b8">Fleet Dashboard</text>
+    <rect x="0" y="0" width="250" height="110" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="250" height="24" rx="8" fill="#21262d" opacity="0.8"/>
+    <circle cx="12" cy="12" r="3" fill="#38bdf8"/>
+    <circle cx="20" cy="12" r="3" fill="#60a5fa"/>
+    <circle cx="28" cy="12" r="3" fill="#30363d"/>
+    <text x="40" y="16" class="font-mono" font-size="8.5" fill="#8b949e">Fleet Dashboard</text>
 
     <g transform="translate(14, 38)">
-      <text x="0" y="14" class="font-sans" font-size="10" fill="#cbd5e1">• Staged OTA Firmware Rollout</text>
-      <text x="0" y="34" class="font-sans" font-size="10" fill="#cbd5e1">• Real-Time Camera Telemetry</text>
-      <text x="0" y="54" class="font-sans" font-size="10" fill="#34d399">• Automated Storage Pruning</text>
+      <text x="0" y="14" class="font-sans" font-size="10" fill="#c9d1d9">• Staged OTA Firmware Rollout</text>
+      <text x="0" y="34" class="font-sans" font-size="10" fill="#c9d1d9">• Real-Time Camera Telemetry</text>
+      <text x="0" y="54" class="font-sans" font-size="10" fill="#38bdf8">• Automated Storage Pruning</text>
     </g>
   </g>
 </svg>
