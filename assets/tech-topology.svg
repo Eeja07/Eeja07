@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Grid Pattern -->
+    <pattern id="tech-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6" opacity="0.5"/>
+      <circle cx="20" cy="20" r="0.8" fill="#334155" opacity="0.6"/>
+    </pattern>
+
+    <!-- Linear Gradients for Clusters -->
+    <linearGradient id="infra-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="backend-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="iot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#db2777" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <style><![CDATA[
+    .font-mono { font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'Courier New', monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+    @keyframes flow-infra {
+      0% { stroke-dashoffset: 48; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes flow-backend {
+      0% { stroke-dashoffset: 48; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes flow-iot {
+      0% { stroke-dashoffset: 48; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes flow-ai {
+      0% { stroke-dashoffset: 48; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.2); opacity: 0.4; }
+    }
+
+    .pkt-infra { stroke-dasharray: 6 14; animation: flow-infra 1.8s linear infinite; }
+    .pkt-backend { stroke-dasharray: 6 14; animation: flow-backend 2.1s linear infinite; }
+    .pkt-iot { stroke-dasharray: 6 14; animation: flow-iot 1.9s linear infinite; }
+    .pkt-ai { stroke-dasharray: 6 14; animation: flow-ai 2.3s linear infinite; }
+
+    .hub-pulse { animation: pulse-dot 2.5s ease-in-out infinite; transform-origin: 460px 75px; }
+  ]]></style>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="916" height="446" rx="12" fill="#090d16" stroke="url(#card-border)" stroke-width="1.2"/>
+  <rect x="6" y="6" width="908" height="438" rx="10" fill="url(#tech-grid)"/>
+
+  <!-- ================= TOP CENTRAL ROUTER HUB ================= -->
+  <g transform="translate(460, 75)">
+    <!-- Hub Pulse -->
+    <circle class="hub-pulse" cx="0" cy="0" r="16" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+    <!-- Router Box -->
+    <rect x="-110" y="-22" width="220" height="44" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
+    <circle cx="-85" cy="0" r="4.5" fill="#38bdf8"/>
+    <circle cx="85" cy="0" r="4.5" fill="#34d399"/>
+    <text x="0" y="-3" text-anchor="middle" class="font-mono" font-size="11.5" font-weight="800" fill="#ffffff" letter-spacing="1.5">TECH_MATRIX // SYS_STACK</text>
+    <text x="0" y="11" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8" letter-spacing="1">INTERCONNECTED SYSTEM DOMAINS</text>
+  </g>
+
+  <!-- ================= BUS ROUTING CABLES ================= -->
+  <!-- Cable 1: Center -> Cluster 1 (Top Left: Infrastructure) -->
+  <path d="M 350 75 Q 240 75 240 145" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <path d="M 350 75 Q 240 75 240 145" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.3"/>
+  <path d="M 350 75 Q 240 75 240 145" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" class="pkt-infra"/>
+
+  <!-- Cable 2: Center -> Cluster 2 (Top Right: Backend) -->
+  <path d="M 570 75 Q 680 75 680 145" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <path d="M 570 75 Q 680 75 680 145" fill="none" stroke="#818cf8" stroke-width="2.5" opacity="0.3"/>
+  <path d="M 570 75 Q 680 75 680 145" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" class="pkt-backend"/>
+
+  <!-- Cable 3: Center -> Cluster 3 (Bottom Left: IoT) -->
+  <path d="M 430 97 Q 380 200 240 295" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <path d="M 430 97 Q 380 200 240 295" fill="none" stroke="#34d399" stroke-width="2.5" opacity="0.3"/>
+  <path d="M 430 97 Q 380 200 240 295" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" class="pkt-iot"/>
+
+  <!-- Cable 4: Center -> Cluster 4 (Bottom Right: AI) -->
+  <path d="M 490 97 Q 540 200 680 295" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <path d="M 490 97 Q 540 200 680 295" fill="none" stroke="#f472b6" stroke-width="2.5" opacity="0.3"/>
+  <path d="M 490 97 Q 540 200 680 295" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round" class="pkt-ai"/>
+
+  <!-- Cross-link: IoT <-> Edge AI -->
+  <line x1="430" y1="365" x2="490" y2="365" stroke="#1e293b" stroke-width="2"/>
+  <line x1="430" y1="365" x2="490" y2="365" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 8" class="pkt-backend"/>
+
+  <!-- Cross-link: Infra <-> Backend -->
+  <line x1="430" y1="215" x2="490" y2="215" stroke="#1e293b" stroke-width="2"/>
+  <line x1="430" y1="215" x2="490" y2="215" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 8" class="pkt-infra"/>
+
+
+  <!-- ================= QUADRANT 1: INFRASTRUCTURE (Top-Left) ================= -->
+  <g transform="translate(30, 145)">
+    <!-- Container -->
+    <rect x="0" y="0" width="400" height="135" rx="8" fill="url(#infra-grad)" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="400" height="26" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Title Bar -->
+    <circle cx="14" cy="13" r="4" fill="#38bdf8"/>
+    <text x="26" y="17" class="font-mono" font-size="10.5" font-weight="700" fill="#38bdf8" letter-spacing="1">INFRASTRUCTURE &amp; NETWORKING</text>
+    <text x="385" y="17" text-anchor="end" class="font-mono" font-size="9" fill="#64748b">LAYER_01</text>
+
+    <!-- Node Matrix Pills -->
+    <!-- Row 1 -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Linux (Debian)</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#38bdf8">Host &amp; POSIX</text>
+    </g>
+    <g transform="translate(136, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Docker Compose</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#38bdf8">Container Mesh</text>
+    </g>
+    <g transform="translate(258, 40)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Cloudflare Tunnel</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#38bdf8">Zero-Trust Ingress</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(14, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Tailscale</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#38bdf8">Mesh VPN Overlays</text>
+    </g>
+    <g transform="translate(136, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Nginx</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#38bdf8">Reverse Proxy / TLS</text>
+    </g>
+    <g transform="translate(258, 84)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">GitHub Actions</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#38bdf8">CI/CD &amp; Trivy Scans</text>
+    </g>
+  </g>
+
+
+  <!-- ================= QUADRANT 2: BACKEND & FULL-STACK (Top-Right) ================= -->
+  <g transform="translate(490, 145)">
+    <rect x="0" y="0" width="400" height="135" rx="8" fill="url(#backend-grad)" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="400" height="26" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    
+    <circle cx="14" cy="13" r="4" fill="#818cf8"/>
+    <text x="26" y="17" class="font-mono" font-size="10.5" font-weight="700" fill="#818cf8" letter-spacing="1">BACKEND &amp; FULL-STACK SYSTEMS</text>
+    <text x="385" y="17" text-anchor="end" class="font-mono" font-size="9" fill="#64748b">LAYER_02</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">TypeScript / Node</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#818cf8">Typed Core Runtime</text>
+    </g>
+    <g transform="translate(136, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">NestJS</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#818cf8">Modular REST APIs</text>
+    </g>
+    <g transform="translate(258, 40)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Next.js 15 (React)</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#818cf8">Full-Stack SSR &amp; UI</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(14, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Laravel 11 / PHP</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#818cf8">Robust Backend Hub</text>
+    </g>
+    <g transform="translate(136, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">PostgreSQL / Prisma</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#818cf8">ACID Relational Data</text>
+    </g>
+    <g transform="translate(258, 84)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">MinIO (S3) / MySQL</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#818cf8">Object Stores &amp; Media</text>
+    </g>
+  </g>
+
+
+  <!-- ================= QUADRANT 3: IOT & EMBEDDED HARDWARE (Bottom-Left) ================= -->
+  <g transform="translate(30, 295)">
+    <rect x="0" y="0" width="400" height="135" rx="8" fill="url(#iot-grad)" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="400" height="26" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    
+    <circle cx="14" cy="13" r="4" fill="#34d399"/>
+    <text x="26" y="17" class="font-mono" font-size="10.5" font-weight="700" fill="#34d399" letter-spacing="1">IOT &amp; EMBEDDED SYSTEMS</text>
+    <text x="385" y="17" text-anchor="end" class="font-mono" font-size="9" fill="#64748b">LAYER_03</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">ESP32 / ESP32-CAM</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#34d399">Edge Video Capture</text>
+    </g>
+    <g transform="translate(136, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Raspberry Pi 5</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#34d399">Companion Compute</text>
+    </g>
+    <g transform="translate(258, 40)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">MQTT (EMQX v5)</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#34d399">Telemetry Ingestion</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(14, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Staged OTA Pipeline</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#34d399">Firmware Rollouts</text>
+    </g>
+    <g transform="translate(136, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">WebSockets / Reverb</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#34d399">Sub-second Stream</text>
+    </g>
+    <g transform="translate(258, 84)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Sensors &amp; Actuators</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#34d399">I2C / SPI / GPIO</text>
+    </g>
+  </g>
+
+
+  <!-- ================= QUADRANT 4: EDGE AI & COMPUTER VISION (Bottom-Right) ================= -->
+  <g transform="translate(490, 295)">
+    <rect x="0" y="0" width="400" height="135" rx="8" fill="url(#ai-grad)" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="400" height="26" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    
+    <circle cx="14" cy="13" r="4" fill="#f472b6"/>
+    <text x="26" y="17" class="font-mono" font-size="10.5" font-weight="700" fill="#f472b6" letter-spacing="1">EDGE AI &amp; COMPUTER VISION</text>
+    <text x="385" y="17" text-anchor="end" class="font-mono" font-size="9" fill="#64748b">LAYER_04</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">YOLOv8 Object Detect</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#f472b6">Real-time Inference</text>
+    </g>
+    <g transform="translate(136, 40)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">ONNX Runtime</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#f472b6">Quantized Edge Engine</text>
+    </g>
+    <g transform="translate(258, 40)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">OpenCV &amp; Python</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#f472b6">Frame Preprocessing</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(14, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">MAVSDK / MAVLink</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#f472b6">Drone Offboard Logic</text>
+    </g>
+    <g transform="translate(136, 84)">
+      <rect x="0" y="0" width="112" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">Pixhawk 6C Autopilot</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#f472b6">Autonomous Flight</text>
+    </g>
+    <g transform="translate(258, 84)">
+      <rect x="0" y="0" width="128" height="34" rx="5" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#f8fafc">FastAPI Vision Svc</text>
+      <text x="10" y="27" class="font-mono" font-size="7.5" fill="#f472b6">Async Inference API</text>
+    </g>
+  </g>
+</svg>
