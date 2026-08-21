@@ -1,18 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 135" width="100%" height="100%">
   <defs>
     <linearGradient id="hdr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#090d16"/>
     </linearGradient>
     <linearGradient id="hdr-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#21262d"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.5"/>
     </linearGradient>
     <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="70%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
   </defs>
 
@@ -22,34 +21,44 @@
   ]]></style>
 
   <!-- Background Card -->
-  <rect x="2" y="2" width="896" height="126" rx="10" fill="url(#hdr-bg)" stroke="url(#hdr-border)" stroke-width="1.2"/>
+  <rect x="2" y="2" width="896" height="131" rx="8" fill="url(#hdr-bg)" stroke="url(#hdr-border)" stroke-width="1"/>
 
   <!-- Left Content -->
-  <g transform="translate(36, 34)">
-    <text x="0" y="0" class="font-sans" font-size="28" font-weight="800" fill="url(#name-grad)">Hi, I'm Mahija 👋</text>
-    <text x="0" y="26" class="font-sans" font-size="14" font-weight="500" fill="#8b949e">Computer Engineering Graduate • Systems &amp; Software Builder</text>
+  <g transform="translate(36, 36)">
+    <text x="0" y="0" class="font-sans" font-size="26" font-weight="800" fill="url(#name-grad)" letter-spacing="0.3">Mahija Ibad Pradipta</text>
+    <text x="0" y="24" class="font-sans" font-size="13.5" font-weight="500" fill="#8b949e">Computer Engineering • Software, Embedded Systems &amp; Vision</text>
   </g>
 
   <!-- Pill Badges -->
-  <g transform="translate(36, 92)">
+  <g transform="translate(36, 94)">
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="105" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="52" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#c9d1d9">📍 Indonesia</text>
+      <rect x="0" y="0" width="86" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="43" y="15" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#8b949e">INDONESIA</text>
     </g>
-    <g transform="translate(115, 0)">
-      <rect x="0" y="0" width="145" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="72" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#38bdf8">🌐 portfolio.eeja.fun</text>
+    <g transform="translate(96, 0)">
+      <rect x="0" y="0" width="140" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="70" y="15" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#38bdf8">portfolio.eeja.fun</text>
     </g>
-    <g transform="translate(270, 0)">
-      <rect x="0" y="0" width="135" height="24" rx="6" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
-      <text x="67" y="16" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#38bdf8">✨ Open to Roles</text>
+    <g transform="translate(246, 0)">
+      <rect x="0" y="0" width="108" height="22" rx="4" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
+      <circle cx="12" cy="11" r="3" fill="#38bdf8"/>
+      <text x="58" y="15" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#38bdf8">AVAILABLE</text>
     </g>
   </g>
 
-  <!-- Right Decorative Icon Badge -->
-  <g transform="translate(810, 65)">
-    <circle cx="0" cy="0" r="30" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
-    <circle cx="0" cy="0" r="26" fill="#0f172a"/>
-    <text x="0" y="7" text-anchor="middle" font-size="20">🚀</text>
+  <!-- Right Geometric Subnet Graphic (Monochrome Blue) -->
+  <g transform="translate(820, 67)">
+    <circle cx="0" cy="0" r="24" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Clean Minimal Chip Icon -->
+    <rect x="-10" y="-10" width="20" height="20" rx="3" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+    <line x1="-10" y1="-5" x2="-14" y2="-5" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="-10" y1="5" x2="-14" y2="5" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="10" y1="-5" x2="14" y2="-5" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="10" y1="5" x2="14" y2="5" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="-5" y1="-10" x2="-5" y2="-14" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="5" y1="-10" x2="5" y2="-14" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="-5" y1="10" x2="-5" y2="14" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="5" y1="10" x2="5" y2="14" stroke="#38bdf8" stroke-width="1.2"/>
   </g>
 </svg>

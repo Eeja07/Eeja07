@@ -5,8 +5,8 @@
       <stop offset="100%" stop-color="#090d16"/>
     </linearGradient>
     <linearGradient id="miv-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#30363d"/>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#21262d"/>
     </linearGradient>
   </defs>
 
@@ -16,47 +16,57 @@
   ]]></style>
 
   <!-- Background Card -->
-  <rect x="2" y="2" width="896" height="156" rx="8" fill="url(#miv-bg)" stroke="url(#miv-border)" stroke-width="1"/>
+  <rect x="2" y="2" width="896" height="156" rx="6" fill="url(#miv-bg)" stroke="url(#miv-border)" stroke-width="1"/>
 
-  <!-- Left Camera & Streaming Icon -->
+  <!-- Left Camera & Device Node -->
   <g transform="translate(36, 35)">
-    <rect x="0" y="0" width="80" height="85" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="40" y="44" text-anchor="middle" font-size="28">📹</text>
-    <rect x="10" y="58" width="60" height="18" rx="4" fill="#0d1117" stroke="#0284c7" stroke-width="0.8"/>
-    <text x="40" y="70" text-anchor="middle" class="font-mono" font-size="8" font-weight="700" fill="#38bdf8">ESP32-CAM</text>
+    <rect x="0" y="0" width="80" height="85" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    
+    <!-- Clean Vector Camera Icon -->
+    <rect x="22" y="24" width="36" height="24" rx="3" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
+    <circle cx="40" cy="36" r="6" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
+    <circle cx="40" cy="36" r="2.5" fill="#38bdf8"/>
+    <rect x="28" y="19" width="12" height="5" rx="1.5" fill="#38bdf8"/>
+
+    <rect x="10" y="58" width="60" height="18" rx="3" fill="#0d1117" stroke="#0284c7" stroke-width="0.8"/>
+    <text x="40" y="70" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#38bdf8">ESP32-CAM</text>
   </g>
 
   <!-- Connection Arrow -->
   <g transform="translate(126, 75)">
     <line x1="0" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3"/>
     <polygon points="35,-4 42,0 35,4" fill="#38bdf8"/>
-    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#8b949e">MQTT/WSS</text>
+    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#8b949e">MQTT / WSS</text>
   </g>
 
   <!-- Center Architecture Block: Core Services -->
   <g transform="translate(180, 24)">
-    <rect x="0" y="0" width="370" height="110" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="370" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
     
     <!-- Header -->
-    <rect x="0" y="0" width="370" height="24" rx="8" fill="#21262d" opacity="0.8"/>
-    <text x="14" y="16" class="font-mono" font-size="9" font-weight="700" fill="#38bdf8">MIVION PLATFORM CORE</text>
+    <rect x="0" y="0" width="370" height="24" rx="6" fill="#21262d" opacity="0.9"/>
+    <text x="14" y="16" class="font-mono" font-size="9" font-weight="700" fill="#38bdf8">MIVION INGESTION CORE</text>
     <text x="355" y="16" text-anchor="end" class="font-mono" font-size="8" fill="#8b949e">LARAVEL 11 + EMQX</text>
 
-    <!-- 3 Internal Service Badges -->
+    <!-- 4 Internal Service Badges -->
     <g transform="translate(14, 34)">
-      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#e6edf3">⚡ EMQX MQTT Broker</text>
+      <rect x="0" y="0" width="165" height="30" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <circle cx="12" cy="15" r="2.5" fill="#38bdf8"/>
+      <text x="22" y="19" class="font-mono" font-size="8.5" font-weight="500" fill="#e6edf3">EMQX MQTT Broker</text>
 
-      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#e6edf3">📡 Laravel Reverb (WSS)</text>
+      <rect x="175" y="0" width="165" height="30" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <circle cx="187" cy="15" r="2.5" fill="#38bdf8"/>
+      <text x="197" y="19" class="font-mono" font-size="8.5" font-weight="500" fill="#e6edf3">Laravel Reverb WSS</text>
     </g>
 
     <g transform="translate(14, 70)">
-      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8">📦 MinIO S3 Storage</text>
+      <rect x="0" y="0" width="165" height="30" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <circle cx="12" cy="15" r="2.5" fill="#38bdf8"/>
+      <text x="22" y="19" class="font-mono" font-size="8.5" font-weight="500" fill="#38bdf8">MinIO S3 Storage</text>
 
-      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8">🤖 FastAPI YOLO Service</text>
+      <rect x="175" y="0" width="165" height="30" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+      <circle cx="187" cy="15" r="2.5" fill="#38bdf8"/>
+      <text x="197" y="19" class="font-mono" font-size="8.5" font-weight="500" fill="#38bdf8">FastAPI YOLO Service</text>
     </g>
   </g>
 
@@ -64,22 +74,22 @@
   <g transform="translate(560, 75)">
     <line x1="0" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3"/>
     <polygon points="35,-4 42,0 35,4" fill="#38bdf8"/>
-    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#8b949e">OTA / FEEDS</text>
+    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#8b949e">OTA / FEED</text>
   </g>
 
   <!-- Right Dashboard & Control Block -->
   <g transform="translate(610, 24)">
-    <rect x="0" y="0" width="250" height="110" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="250" height="24" rx="8" fill="#21262d" opacity="0.8"/>
-    <circle cx="12" cy="12" r="3" fill="#38bdf8"/>
-    <circle cx="20" cy="12" r="3" fill="#60a5fa"/>
-    <circle cx="28" cy="12" r="3" fill="#30363d"/>
-    <text x="40" y="16" class="font-mono" font-size="8.5" fill="#8b949e">Fleet Dashboard</text>
+    <rect x="0" y="0" width="250" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="250" height="24" rx="6" fill="#21262d" opacity="0.9"/>
+    <circle cx="12" cy="12" r="2.5" fill="#38bdf8"/>
+    <circle cx="20" cy="12" r="2.5" fill="#60a5fa"/>
+    <circle cx="28" cy="12" r="2.5" fill="#30363d"/>
+    <text x="40" y="16" class="font-mono" font-size="8.5" fill="#8b949e">Fleet Management</text>
 
     <g transform="translate(14, 38)">
-      <text x="0" y="14" class="font-sans" font-size="10" fill="#c9d1d9">• Staged OTA Firmware Rollout</text>
-      <text x="0" y="34" class="font-sans" font-size="10" fill="#c9d1d9">• Real-Time Camera Telemetry</text>
-      <text x="0" y="54" class="font-sans" font-size="10" fill="#38bdf8">• Automated Storage Pruning</text>
+      <text x="0" y="14" class="font-sans" font-size="10" fill="#c9d1d9">• Staged OTA Firmware Engine</text>
+      <text x="0" y="34" class="font-sans" font-size="10" fill="#c9d1d9">• Live Telemetry Broadcast</text>
+      <text x="0" y="54" class="font-sans" font-size="10" fill="#38bdf8">• 14-Day Image Lifecycle Retention</text>
     </g>
   </g>
 </svg>

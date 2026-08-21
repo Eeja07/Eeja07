@@ -13,131 +13,131 @@
 
   <!-- CARD 1: SOFTWARE & WEB (Top-Left) -->
   <g transform="translate(10, 10)">
-    <rect x="0" y="0" width="430" height="125" rx="8" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="430" height="32" rx="8" fill="#161b22" opacity="0.8"/>
+    <rect x="0" y="0" width="430" height="125" rx="6" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="430" height="30" rx="6" fill="#161b22" opacity="0.9"/>
     
-    <text x="14" y="21" font-size="14">💻</text>
-    <text x="36" y="21" class="font-sans" font-size="12.5" font-weight="700" fill="#38bdf8">Software &amp; Web Development</text>
+    <circle cx="16" cy="15" r="3" fill="#38bdf8"/>
+    <text x="28" y="19" class="font-mono" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">SOFTWARE &amp; WEB</text>
 
-    <g transform="translate(14, 44)">
+    <g transform="translate(14, 42)">
       <!-- Row 1 -->
-      <rect x="0" y="0" width="68" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="34" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Python</text>
+      <rect x="0" y="0" width="66" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="33" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Python</text>
 
-      <rect x="74" y="0" width="88" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="118" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">JavaScript</text>
+      <rect x="72" y="0" width="86" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="115" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">JavaScript</text>
 
-      <rect x="168" y="0" width="88" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="212" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">TypeScript</text>
+      <rect x="164" y="0" width="86" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="207" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">TypeScript</text>
 
-      <rect x="262" y="0" width="72" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="298" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Node.js</text>
+      <rect x="256" y="0" width="70" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="291" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Node.js</text>
 
       <!-- Row 2 -->
-      <rect x="0" y="34" width="76" height="26" rx="5" fill="#161b22" stroke="#0284c7" stroke-width="1"/>
-      <text x="38" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">Next.js 15</text>
+      <rect x="0" y="32" width="76" height="25" rx="4" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
+      <text x="38" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">Next.js 15</text>
 
-      <rect x="82" y="34" width="68" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="116" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">NestJS</text>
+      <rect x="82" y="32" width="68" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="116" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">NestJS</text>
 
-      <rect x="156" y="34" width="78" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="195" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Laravel 11</text>
+      <rect x="156" y="32" width="78" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="195" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Laravel 11</text>
 
-      <rect x="240" y="34" width="80" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="280" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#8b949e">REST APIs</text>
+      <rect x="240" y="32" width="78" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="279" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#8b949e">REST APIs</text>
     </g>
   </g>
 
   <!-- CARD 2: IOT & EMBEDDED (Top-Right) -->
   <g transform="translate(460, 10)">
-    <rect x="0" y="0" width="430" height="125" rx="8" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="430" height="32" rx="8" fill="#161b22" opacity="0.8"/>
+    <rect x="0" y="0" width="430" height="125" rx="6" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="430" height="30" rx="6" fill="#161b22" opacity="0.9"/>
     
-    <text x="14" y="21" font-size="14">🔌</text>
-    <text x="36" y="21" class="font-sans" font-size="12.5" font-weight="700" fill="#38bdf8">IoT &amp; Embedded Systems</text>
+    <circle cx="16" cy="15" r="3" fill="#38bdf8"/>
+    <text x="28" y="19" class="font-mono" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">IOT &amp; EMBEDDED HARDWARE</text>
 
-    <g transform="translate(14, 44)">
-      <rect x="0" y="0" width="68" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="34" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">ESP32</text>
+    <g transform="translate(14, 42)">
+      <rect x="0" y="0" width="66" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="33" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">ESP32</text>
 
-      <rect x="74" y="0" width="96" height="26" rx="5" fill="#161b22" stroke="#0284c7" stroke-width="1"/>
-      <text x="122" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">ESP32-CAM</text>
+      <rect x="72" y="0" width="94" height="25" rx="4" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
+      <text x="119" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">ESP32-CAM</text>
 
-      <rect x="176" y="0" width="108" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="230" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Raspberry Pi 5</text>
+      <rect x="172" y="0" width="106" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="225" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Raspberry Pi 5</text>
 
       <!-- Row 2 -->
-      <rect x="0" y="34" width="105" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="52" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">MQTT (EMQX)</text>
+      <rect x="0" y="32" width="102" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="51" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">MQTT (EMQX)</text>
 
-      <rect x="111" y="34" width="98" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="160" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">WebSockets</text>
+      <rect x="108" y="32" width="96" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="156" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">WebSockets</text>
 
-      <rect x="215" y="34" width="105" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="267" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#8b949e">OTA Firmware</text>
+      <rect x="210" y="32" width="104" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="262" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#8b949e">OTA Staging</text>
     </g>
   </g>
 
   <!-- CARD 3: COMPUTER VISION (Bottom-Left) -->
   <g transform="translate(10, 150)">
-    <rect x="0" y="0" width="430" height="125" rx="8" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="430" height="32" rx="8" fill="#161b22" opacity="0.8"/>
+    <rect x="0" y="0" width="430" height="125" rx="6" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="430" height="30" rx="6" fill="#161b22" opacity="0.9"/>
     
-    <text x="14" y="21" font-size="14">🤖</text>
-    <text x="36" y="21" class="font-sans" font-size="12.5" font-weight="700" fill="#38bdf8">Computer Vision &amp; Robotics</text>
+    <circle cx="16" cy="15" r="3" fill="#38bdf8"/>
+    <text x="28" y="19" class="font-mono" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">COMPUTER VISION &amp; ROBOTICS</text>
 
-    <g transform="translate(14, 44)">
-      <rect x="0" y="0" width="76" height="26" rx="5" fill="#161b22" stroke="#0284c7" stroke-width="1"/>
-      <text x="38" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">YOLOv8</text>
+    <g transform="translate(14, 42)">
+      <rect x="0" y="0" width="76" height="25" rx="4" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
+      <text x="38" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">YOLOv8</text>
 
-      <rect x="82" y="0" width="72" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="118" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">OpenCV</text>
+      <rect x="82" y="0" width="70" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="117" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">OpenCV</text>
 
-      <rect x="160" y="0" width="112" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="216" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">ONNX Runtime</text>
+      <rect x="158" y="0" width="112" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="214" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">ONNX Runtime</text>
 
       <!-- Row 2 -->
-      <rect x="0" y="34" width="118" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="59" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">MAVSDK / PX4</text>
+      <rect x="0" y="32" width="116" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="58" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">MAVSDK / PX4</text>
 
-      <rect x="124" y="34" width="96" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="172" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Pixhawk 6C</text>
+      <rect x="122" y="32" width="94" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="169" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Pixhawk 6C</text>
 
-      <rect x="226" y="34" width="105" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="278" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#8b949e">FastAPI Vision</text>
+      <rect x="222" y="32" width="102" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="273" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#8b949e">FastAPI Vision</text>
     </g>
   </g>
 
   <!-- CARD 4: INFRASTRUCTURE (Bottom-Right) -->
   <g transform="translate(460, 150)">
-    <rect x="0" y="0" width="430" height="125" rx="8" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="430" height="32" rx="8" fill="#161b22" opacity="0.8"/>
+    <rect x="0" y="0" width="430" height="125" rx="6" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="430" height="30" rx="6" fill="#161b22" opacity="0.9"/>
     
-    <text x="14" y="21" font-size="14">🌐</text>
-    <text x="36" y="21" class="font-sans" font-size="12.5" font-weight="700" fill="#38bdf8">Infrastructure &amp; Homelab</text>
+    <circle cx="16" cy="15" r="3" fill="#38bdf8"/>
+    <text x="28" y="19" class="font-mono" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">INFRASTRUCTURE &amp; LINUX</text>
 
-    <g transform="translate(14, 44)">
-      <rect x="0" y="0" width="102" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="51" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Linux (Debian)</text>
+    <g transform="translate(14, 42)">
+      <rect x="0" y="0" width="100" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="50" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Linux (Debian)</text>
 
-      <rect x="108" y="0" width="68" height="26" rx="5" fill="#161b22" stroke="#0284c7" stroke-width="1"/>
-      <text x="142" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">Docker</text>
+      <rect x="106" y="0" width="66" height="25" rx="4" fill="#0f2d4a" stroke="#0284c7" stroke-width="1"/>
+      <text x="139" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#38bdf8">Docker</text>
 
-      <rect x="182" y="0" width="130" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="247" y="17" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Cloudflare Tunnels</text>
+      <rect x="178" y="0" width="128" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="242" y="16" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Cloudflare Tunnels</text>
 
       <!-- Row 2 -->
-      <rect x="0" y="34" width="72" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="36" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Tailscale</text>
+      <rect x="0" y="32" width="70" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="35" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Tailscale</text>
 
-      <rect x="78" y="34" width="58" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="107" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">Nginx</text>
+      <rect x="76" y="32" width="56" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="104" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">Nginx</text>
 
-      <rect x="142" y="34" width="90" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="187" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#e6edf3">PostgreSQL</text>
+      <rect x="138" y="32" width="88" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="182" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#e6edf3">PostgreSQL</text>
 
-      <rect x="238" y="34" width="80" height="26" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="278" y="51" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="600" fill="#8b949e">MinIO (S3)</text>
+      <rect x="232" y="32" width="78" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="271" y="48" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#8b949e">MinIO (S3)</text>
     </g>
   </g>
 </svg>
