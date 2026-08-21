@@ -87,14 +87,14 @@ Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
 
 </div>
 
-<br/>
+<!-- <br/> -->
 
 * 🌐 **Portfolio:** [portfolio.eeja.fun](https://portfolio.eeja.fun)
 * 💼 **LinkedIn:** [linkedin.com/in/mahijapradipta](https://linkedin.com/in/mahijapradipta)
 * ✉️ **Email:** [mahijapradipta86@gmail.com](mailto:mahijapradipta86@gmail.com)
 * 🐙 **GitHub:** [github.com/Eeja07](https://github.com/Eeja07)
 
-<br/>
+<!-- <br/> -->
 
 <div align="center">
   <sub>Mahija Ibad Pradipta • Connected Systems &amp; Software</sub>
