@@ -177,9 +177,9 @@
       <text x="10" y="15" class="font-mono" font-size="9" font-weight="700" fill="#34d399">FASTAPI AI INFERENCE</text>
       <text x="170" y="15" text-anchor="end" class="font-mono" font-size="8" fill="#64748b">:8001</text>
       <text x="10" y="38" class="font-mono" font-size="8" fill="#94a3b8">• YOLO Human Detection</text>
-      <text x="10" y="52" class="font-mono" font-size="8" fill="#94a3b8">• Optical Motion Vector</text>
-      <text x="10" y="66" class="font-mono" font-size="8" fill="#94a3b8">• Postback: /api/feedback</text>
-      <text x="10" y="80" class="font-mono" font-size="8" fill="#34d399">• Sub-second Bounding Box</text>
+      <text x="10" y="52" class="font-mono" font-size="8" fill="#94a3b8">• Motion Vector Analysis</text>
+      <text x="10" y="66" class="font-mono" font-size="8" fill="#94a3b8">• /api/detection-feedback</text>
+      <text x="10" y="80" class="font-mono" font-size="8" fill="#34d399">• Bounding Box Postback</text>
     </g>
 
     <!-- Blade / Vite Client UI -->

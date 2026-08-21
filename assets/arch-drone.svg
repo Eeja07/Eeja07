@@ -139,8 +139,8 @@
     <g transform="translate(12, 160)">
       <rect x="0" y="0" width="176" height="56" rx="4" fill="#0b1120" stroke="#ec4899" stroke-width="1"/>
       <text x="8" y="16" class="font-mono" font-size="8.5" font-weight="700" fill="#f472b6">YOLOv8n ONNX Engine</text>
-      <text x="8" y="30" class="font-mono" font-size="7.5" fill="#94a3b8">• Quantized 320x320 Input</text>
-      <text x="8" y="44" class="font-mono" font-size="7.5" fill="#34d399">• Sub-50ms Frame Latency</text>
+      <text x="8" y="30" class="font-mono" font-size="7.5" fill="#94a3b8">• yolov8n320.onnx Model</text>
+      <text x="8" y="44" class="font-mono" font-size="7.5" fill="#34d399">• Real-Time Edge Inference</text>
     </g>
 
     <!-- Shell Process Coordinator -->
@@ -181,7 +181,7 @@
       <rect x="0" y="0" width="151" height="64" rx="5" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
       <text x="10" y="18" class="font-mono" font-size="8.5" font-weight="700" fill="#f8fafc">RTK / GPS Receiver</text>
       <text x="10" y="32" class="font-mono" font-size="7.5" fill="#94a3b8">• 3D Spatial Geolocation</text>
-      <text x="10" y="46" class="font-mono" font-size="7.5" fill="#10b981">Centimeter Fix Lock</text>
+      <text x="10" y="46" class="font-mono" font-size="7.5" fill="#10b981">GNSS Position Lock</text>
     </g>
   </g>
 

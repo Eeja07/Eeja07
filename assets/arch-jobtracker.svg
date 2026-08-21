@@ -122,7 +122,7 @@
       <text x="12" y="80" class="font-mono" font-size="8" fill="#94a3b8">• Contact &amp; Company Index</text>
       <text x="12" y="98" class="font-mono" font-size="8" fill="#94a3b8">• Stored Query Optimization</text>
       <rect x="12" y="108" width="156" height="16" rx="3" fill="#0369a1" opacity="0.3"/>
-      <text x="90" y="120" text-anchor="middle" class="font-mono" font-size="7.5" font-weight="700" fill="#38bdf8">db_pool: max=20</text>
+      <text x="90" y="120" text-anchor="middle" class="font-mono" font-size="7.5" font-weight="700" fill="#38bdf8">Prisma Connection Pool</text>
     </g>
 
     <!-- Gmail Sync Engine -->
@@ -154,7 +154,7 @@
       <rect x="0" y="0" width="151" height="66" rx="4" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
       <text x="8" y="16" class="font-mono" font-size="8.5" font-weight="700" fill="#ffffff">Multi-stage Docker</text>
       <text x="8" y="30" class="font-mono" font-size="7.5" fill="#94a3b8">• node:22-alpine base</text>
-      <text x="8" y="44" class="font-mono" font-size="7.5" fill="#34d399">• Image Size: &lt;180MB</text>
+      <text x="8" y="44" class="font-mono" font-size="7.5" fill="#34d399">• Multi-Stage Layer</text>
       <text x="8" y="58" class="font-mono" font-size="7.5" fill="#94a3b8">• Non-root runner</text>
     </g>
 
@@ -162,9 +162,9 @@
     <g transform="translate(12, 114)">
       <rect x="0" y="0" width="151" height="66" rx="4" fill="#0b1120" stroke="#10b981" stroke-width="1"/>
       <text x="8" y="16" class="font-mono" font-size="8.5" font-weight="700" fill="#34d399">Trivy Vulnerability Scan</text>
-      <text x="8" y="30" class="font-mono" font-size="7.5" fill="#94a3b8">• 0 HIGH / CRITICAL CVE</text>
-      <text x="8" y="44" class="font-mono" font-size="7.5" fill="#94a3b8">• Automated PR blocker</text>
-      <text x="8" y="58" class="font-mono" font-size="7.5" fill="#10b981">[PASSED GATE]</text>
+      <text x="8" y="30" class="font-mono" font-size="7.5" fill="#94a3b8">• Automated Container Scan</text>
+      <text x="8" y="44" class="font-mono" font-size="7.5" fill="#94a3b8">• PR Quality Blocker</text>
+      <text x="8" y="58" class="font-mono" font-size="7.5" fill="#10b981">[SECURITY GATE]</text>
     </g>
 
     <!-- Rolling Deploy -->
