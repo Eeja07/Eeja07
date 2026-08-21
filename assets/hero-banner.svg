@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <!-- Ambient Glow Orbs -->
+    <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Dot Pattern -->
+    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <style><![CDATA[
+    .font-mono { font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+    /* Keyframes */
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(3deg); }
+    }
+    @keyframes float-rev {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(8px) rotate(-3deg); }
+    }
+    @keyframes orbit-cw {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes orbit-ccw {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes pulse-ring {
+      0% { r: 12px; opacity: 0.9; stroke-width: 2px; }
+      100% { r: 32px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes flow-packets {
+      0% { stroke-dashoffset: 48; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    /* Subtitle Carousel Animation */
+    @keyframes type-1 {
+      0%, 20% { opacity: 1; transform: translateY(0px); }
+      25%, 95% { opacity: 0; transform: translateY(-8px); }
+      100% { opacity: 1; transform: translateY(0px); }
+    }
+    @keyframes type-2 {
+      0%, 20% { opacity: 0; transform: translateY(8px); }
+      25%, 45% { opacity: 1; transform: translateY(0px); }
+      50%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes type-3 {
+      0%, 45% { opacity: 0; transform: translateY(8px); }
+      50%, 70% { opacity: 1; transform: translateY(0px); }
+      75%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes type-4 {
+      0%, 70% { opacity: 0; transform: translateY(8px); }
+      75%, 95% { opacity: 1; transform: translateY(0px); }
+      100% { opacity: 0; transform: translateY(-8px); }
+    }
+
+    .floater-1 { animation: float-slow 4s ease-in-out infinite; }
+    .floater-2 { animation: float-rev 5s ease-in-out infinite; }
+    .orbit-1 { transform-origin: 730px 190px; animation: orbit-cw 18s linear infinite; }
+    .orbit-2 { transform-origin: 730px 190px; animation: orbit-ccw 24s linear infinite; }
+    .pulse-core { transform-origin: 730px 190px; animation: pulse-ring 2.5s cubic-bezier(0.2, 0.8, 0.4, 1) infinite; }
+    .cable-flow { stroke-dasharray: 6 12; animation: flow-packets 1.8s linear infinite; }
+
+    .role-1 { animation: type-1 12s infinite; }
+    .role-2 { animation: type-2 12s infinite; }
+    .role-3 { animation: type-3 12s infinite; }
+    .role-4 { animation: type-4 12s infinite; }
+  ]]></style>
+
+  <!-- Background Canvas -->
+  <rect x="2" y="2" width="916" height="376" rx="16" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="1.5"/>
+  <rect x="6" y="6" width="908" height="368" rx="14" fill="url(#dot-grid)"/>
+
+  <!-- Ambient Glows -->
+  <circle cx="750" cy="180" r="180" fill="url(#glow-cyan)"/>
+  <circle cx="200" cy="280" r="140" fill="url(#glow-purple)"/>
+
+  <!-- ================= LEFT COLUMN: HERO INTRO & TYPING TEXT ================= -->
+
+  <!-- Top Badge -->
+  <g transform="translate(42, 42)">
+    <rect x="0" y="0" width="250" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" opacity="0.9"/>
+    <text x="14" y="18" class="font-sans" font-size="11.5" font-weight="600" fill="#38bdf8">👋 Hi there, welcome to my profile!</text>
+  </g>
+
+  <!-- Name Title -->
+  <g transform="translate(42, 108)">
+    <text x="0" y="0" class="font-sans" font-size="34" font-weight="900" fill="url(#title-grad)" letter-spacing="0.5">Mahija Ibad Pradipta</text>
+    <text x="0" y="26" class="font-mono" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1">Computer Engineering Graduate</text>
+  </g>
+
+  <!-- Animated Role Box -->
+  <g transform="translate(42, 168)">
+    <rect x="0" y="0" width="400" height="46" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <circle cx="22" cy="23" r="5" fill="#10b981"/>
+    <text x="36" y="27" class="font-mono" font-size="13" font-weight="700" fill="#38bdf8">&gt;</text>
+
+    <!-- Cycling Roles -->
+    <g class="role-1">
+      <text x="54" y="28" class="font-sans" font-size="13.5" font-weight="700" fill="#f8fafc">IoT &amp; Embedded Systems 🔌</text>
+    </g>
+    <g class="role-2">
+      <text x="54" y="28" class="font-sans" font-size="13.5" font-weight="700" fill="#38bdf8">Full-Stack Development 💻</text>
+    </g>
+    <g class="role-3">
+      <text x="54" y="28" class="font-sans" font-size="13.5" font-weight="700" fill="#a855f7">Infrastructure &amp; Homelab 🌐</text>
+    </g>
+    <g class="role-4">
+      <text x="54" y="28" class="font-sans" font-size="13.5" font-weight="700" fill="#34d399">Computer Vision &amp; AI 🤖</text>
+    </g>
+  </g>
+
+  <!-- Friendly Tagline Description -->
+  <g transform="translate(42, 240)">
+    <text x="0" y="0" class="font-sans" font-size="14" fill="#cbd5e1" font-weight="400">
+      I enjoy building practical systems where software, hardware,
+    </text>
+    <text x="0" y="22" class="font-sans" font-size="14" fill="#cbd5e1" font-weight="400">
+      infrastructure, and intelligent devices communicate and work together.
+    </text>
+  </g>
+
+  <!-- Bottom Quick Pill Badges -->
+  <g transform="translate(42, 304)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="90" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="45" y="17" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#94a3b8">📍 Indonesia</text>
+    </g>
+    <g transform="translate(100, 0)">
+      <rect x="0" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="65" y="17" text-anchor="middle" class="font-sans" font-size="11" font-weight="600" fill="#38bdf8">🌐 portfolio.eeja.fun</text>
+    </g>
+    <g transform="translate(240, 0)">
+      <rect x="0" y="0" width="140" height="26" rx="6" fill="#065f46" stroke="#10b981" stroke-width="1"/>
+      <text x="70" y="17" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#6ee7b7">✨ Open to Roles</text>
+    </g>
+  </g>
+
+
+  <!-- ================= RIGHT COLUMN: PLAYFUL CONNECTED LAB GRAPHIC ================= -->
+
+  <!-- Orbit Rings -->
+  <circle cx="730" cy="190" r="120" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <circle cx="730" cy="190" r="75" fill="none" stroke="#334155" stroke-width="1.2" stroke-dasharray="3 6"/>
+
+  <!-- Pulse Ring on Core -->
+  <circle class="pulse-core" cx="730" cy="190" r="16" fill="none" stroke="#38bdf8" opacity="0.8"/>
+
+  <!-- Connecting Cables to Floating Nodes -->
+  <!-- Top Node: Web & Cloud (730, 70) -->
+  <path d="M 730 190 L 730 75" fill="none" stroke="#38bdf8" stroke-width="2" class="cable-flow"/>
+  <!-- Left Node: IoT & Sensors (615, 190) -->
+  <path d="M 730 190 L 615 190" fill="none" stroke="#34d399" stroke-width="2" class="cable-flow"/>
+  <!-- Bottom Node: Drone & Vision (730, 305) -->
+  <path d="M 730 190 L 730 305" fill="none" stroke="#a855f7" stroke-width="2" class="cable-flow"/>
+  <!-- Right Node: Server & Docker (845, 190) -->
+  <path d="M 730 190 L 845 190" fill="none" stroke="#f472b6" stroke-width="2" class="cable-flow"/>
+
+  <!-- Central Core Avatar / Emblem -->
+  <g transform="translate(730, 190)" class="floater-1">
+    <circle cx="0" cy="0" r="34" fill="#0f172a" stroke="url(#title-grad)" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="28" fill="#1e293b"/>
+    <text x="0" y="8" text-anchor="middle" font-size="22">🚀</text>
+  </g>
+
+  <!-- Orbiting Node 1: Web & Code (Top) -->
+  <g transform="translate(730, 75)" class="floater-2">
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
+    <text x="0" y="6" text-anchor="middle" font-size="14">💻</text>
+    <rect x="-35" y="-30" width="70" height="18" rx="4" fill="#020617" stroke="#38bdf8" stroke-width="1"/>
+    <text x="0" y="-18" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#38bdf8">SOFTWARE</text>
+  </g>
+
+  <!-- Orbiting Node 2: IoT Chip (Left) -->
+  <g transform="translate(615, 190)" class="floater-1">
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#34d399" stroke-width="1.8"/>
+    <text x="0" y="6" text-anchor="middle" font-size="14">🔌</text>
+    <rect x="-26" y="28" width="52" height="18" rx="4" fill="#020617" stroke="#34d399" stroke-width="1"/>
+    <text x="0" y="40" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#34d399">IOT / MCU</text>
+  </g>
+
+  <!-- Orbiting Node 3: Drone & Vision (Bottom) -->
+  <g transform="translate(730, 305)" class="floater-2">
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#a855f7" stroke-width="1.8"/>
+    <text x="0" y="6" text-anchor="middle" font-size="14">🚁</text>
+    <rect x="-42" y="28" width="84" height="18" rx="4" fill="#020617" stroke="#a855f7" stroke-width="1"/>
+    <text x="0" y="40" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#c084fc">VISION &amp; UAV</text>
+  </g>
+
+  <!-- Orbiting Node 4: Server / Docker (Right) -->
+  <g transform="translate(845, 190)" class="floater-1">
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#f472b6" stroke-width="1.8"/>
+    <text x="0" y="6" text-anchor="middle" font-size="14">🌐</text>
+    <rect x="-35" y="28" width="70" height="18" rx="4" fill="#020617" stroke="#f472b6" stroke-width="1"/>
+    <text x="0" y="40" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#f472b6">HOMELAB</text>
+  </g>
+
+  <!-- Orbiting Micro Particles (Satellite dots) -->
+  <g class="orbit-1">
+    <circle cx="850" cy="190" r="4" fill="#38bdf8"/>
+  </g>
+  <g class="orbit-2">
+    <circle cx="655" cy="190" r="3.5" fill="#ec4899"/>
+  </g>
+</svg>

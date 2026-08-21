@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="drone-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="drone-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <radialGradient id="drone-cone" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style><![CDATA[
+    .font-mono { font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+    @keyframes drone-hover {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes prop-spin {
+      0% { transform: scaleX(1); }
+      50% { transform: scaleX(0.1); }
+      100% { transform: scaleX(1); }
+    }
+    @keyframes signal-pulse {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes lock-pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.7; }
+    }
+
+    .drone-fly { animation: drone-hover 3s ease-in-out infinite; }
+    .prop { animation: prop-spin 0.2s linear infinite; }
+    .sig-flow { stroke-dasharray: 6 10; animation: signal-pulse 1.4s linear infinite; }
+    .target-lock { animation: lock-pulse 2s ease-in-out infinite; transform-origin: 290px 105px; }
+  ]]></style>
+
+  <rect x="2" y="2" width="896" height="176" rx="12" fill="url(#drone-bg)" stroke="url(#drone-border)" stroke-width="1.2"/>
+
+  <!-- Top Bar -->
+  <g transform="translate(24, 18)">
+    <circle cx="14" cy="6" r="4.5" fill="#a855f7"/>
+    <text x="26" y="10" class="font-mono" font-size="10.5" font-weight="700" fill="#a855f7" letter-spacing="1">UAV AUTONOMY</text>
+    <text x="150" y="10" class="font-mono" font-size="10" fill="#64748b">HOLYBRO S500 // PIXHAWK 6C // RASPBERRY PI 5</text>
+  </g>
+
+  <!-- ================= ANIMATED DRONE GRAPHIC ================= -->
+
+  <!-- Drone Body (Left) -->
+  <g transform="translate(100, 75)" class="drone-fly">
+    <!-- Scan Cone -->
+    <path d="M 0 10 L -60 75 L 60 75 Z" fill="url(#drone-cone)"/>
+
+    <!-- Airframe Arms -->
+    <line x1="-42" y1="-8" x2="42" y2="8" stroke="#334155" stroke-width="3.5"/>
+    <line x1="-42" y1="8" x2="42" y2="-8" stroke="#334155" stroke-width="3.5"/>
+
+    <!-- Center Chassis -->
+    <rect x="-18" y="-12" width="36" height="24" rx="5" fill="#0f172a" stroke="#a855f7" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="6" fill="#ec4899"/>
+
+    <!-- 4 Motors & Spinning Props -->
+    <!-- Prop 1 (Top Left) -->
+    <circle cx="-42" cy="-8" r="4" fill="#a855f7"/>
+    <line class="prop" x1="-58" y1="-14" x2="-26" y2="-14" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Prop 2 (Top Right) -->
+    <circle cx="42" cy="-8" r="4" fill="#a855f7"/>
+    <line class="prop" x1="26" y1="-14" x2="58" y2="-14" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Prop 3 (Bottom Left) -->
+    <circle cx="-42" cy="8" r="4" fill="#a855f7"/>
+    <line class="prop" x1="-58" y1="14" x2="-26" y2="14" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Prop 4 (Bottom Right) -->
+    <circle cx="42" cy="8" r="4" fill="#a855f7"/>
+    <line class="prop" x1="26" y1="14" x2="58" y2="14" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+
+  <!-- Ground Target Box (Middle-Left) -->
+  <g transform="translate(250, 75)" class="target-lock">
+    <rect x="0" y="0" width="70" height="60" rx="4" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <rect x="0" y="-12" width="70" height="12" fill="#ec4899"/>
+    <text x="35" y="-3" text-anchor="middle" class="font-mono" font-size="7.5" font-weight="700" fill="#020617">HUMAN LOCK</text>
+    <text x="35" y="38" text-anchor="middle" font-size="22">🎯</text>
+  </g>
+
+  <!-- Connecting Telemetry Cable (Center) -->
+  <path d="M 350 90 L 510 90" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <path d="M 350 90 L 510 90" fill="none" stroke="#a855f7" stroke-width="2" class="sig-flow"/>
+
+  <!-- Telemetry Badge -->
+  <g transform="translate(390, 72)">
+    <rect x="0" y="0" width="85" height="20" rx="4" fill="#020617" stroke="#a855f7" stroke-width="1"/>
+    <text x="42" y="14" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#c084fc">MAVLINK UART</text>
+  </g>
+
+  <!-- Autopilot & Vision Card (Right) -->
+  <g transform="translate(530, 42)">
+    <rect x="0" y="0" width="330" height="106" rx="8" fill="#090e1a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="330" height="24" rx="8" fill="#1e293b" opacity="0.5"/>
+    <circle cx="12" cy="12" r="3.5" fill="#ef4444"/>
+    <circle cx="22" cy="12" r="3.5" fill="#f59e0b"/>
+    <circle cx="32" cy="12" r="3.5" fill="#10b981"/>
+    <text x="50" y="16" class="font-mono" font-size="9" fill="#94a3b8">Autonomous Mission Telemetry</text>
+
+    <!-- Sub components inside card -->
+    <g transform="translate(14, 36)">
+      <!-- Flight Mode Badge -->
+      <rect x="0" y="0" width="140" height="26" rx="4" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
+      <text x="8" y="17" class="font-mono" font-size="8.5" fill="#c084fc">🧭 Mode: OFFBOARD</text>
+
+      <!-- ONNX Runtime Badge -->
+      <rect x="150" y="0" width="145" height="26" rx="4" fill="#0f172a" stroke="#ec4899" stroke-width="1"/>
+      <text x="158" y="17" class="font-mono" font-size="8.5" fill="#f472b6">⚡ yolov8n320.onnx</text>
+
+      <!-- MAVSDK Search Loop Badge -->
+      <rect x="0" y="34" width="295" height="26" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="8" y="51" class="font-mono" font-size="8.5" fill="#34d399">🎯 MAVSDK Search Grid: Synchronized</text>
+    </g>
+  </g>
+</svg>

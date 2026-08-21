@@ -1,99 +1,77 @@
 <div align="center">
 
-<!-- 01. HERO NETWORK -->
-<img src="assets/hero-network.svg" alt="Mahija Ibad Pradipta - Connected Systems Network Topology" width="100%" />
+<!-- 01. ANIMATED HERO -->
+<img src="assets/hero-banner.svg" alt="Mahija Ibad Pradipta - Developer Portfolio" width="100%" />
 
 <br/><br/>
 
-<!-- NAVIGATION -->
-<p align="center">
-  <a href="#-system--whoami"><code>[ ABOUT ]</code></a> &nbsp;•&nbsp;
-  <a href="#-technology-topology"><code>[ TECHNOLOGY ]</code></a> &nbsp;•&nbsp;
-  <a href="#-featured-projects"><code>[ PROJECTS ]</code></a> &nbsp;•&nbsp;
-  <a href="#-system-incidents--solutions"><code>[ INCIDENTS ]</code></a> &nbsp;•&nbsp;
-  <a href="#-homelab-infrastructure"><code>[ HOMELAB ]</code></a> &nbsp;•&nbsp;
-  <a href="#-system-activity"><code>[ ACTIVITY ]</code></a> &nbsp;•&nbsp;
-  <a href="#-contact--directory"><code>[ CONTACT ]</code></a>
-</p>
+<img src="assets/wave-divider.svg" alt="Wave Divider" width="100%" />
 
 </div>
 
----
+## 👋 About Me
 
-## 🖥️ SYSTEM / WHOAMI
+I'm a **Computer Engineering graduate** passionate about building practical systems that connect software, hardware, infrastructure, and intelligent devices.
+
+I enjoy working on end-to-end engineering projects where multiple technologies communicate smoothly — from microcontroller sensor fleets and edge camera streams to full-stack cloud APIs and real-time computer vision models.
 
 ```bash
 $ whoami
-Mahija Ibad Pradipta (Eeja07)
-Computer Engineering Graduate building interconnected systems across
-self-hosted infrastructure, IoT fleets, full-stack software, and edge computer vision.
-
-$ system --capabilities
-[OK] Infrastructure & Linux  -> Debian 12, Docker Compose, Cloudflare Tunnels, Tailscale, Nginx
-[OK] IoT & Embedded Systems  -> ESP32-CAM, Raspberry Pi 5, EMQX (MQTT v5), WebSockets, Staged OTA
-[OK] Full-Stack Engineering  -> TypeScript, NestJS, Next.js 15, Laravel 11, PostgreSQL, MySQL, MinIO
-[OK] Edge AI & Vision        -> YOLOv8 Object Detection, ONNX Runtime, OpenCV, MAVSDK / PX4
-[OK] DevOps & Testing        -> Multi-stage Alpine Containerization, Trivy Security Scans, CI/CD
-
-$ network --telemetry
-HOST_DOMAIN : portfolio.eeja.fun
-LOCATION    : Indonesia (UTC+7 / WIB)
-STATUS      : Open to Software Engineering, Infrastructure & IoT Systems Roles
+Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
+Interests: IoT Systems • Full-Stack Development • Self-Hosted Infrastructure • Edge Computer Vision
 ```
 
 ---
 
-## 🌐 TECHNOLOGY TOPOLOGY
+## 🛠️ Things I Work With
 
 <div align="center">
-  <img src="assets/tech-topology.svg" alt="Technology Network Topology" width="100%" />
+  <img src="assets/skills-grid.svg" alt="Skills and Technologies" width="100%" />
 </div>
 
 <br/>
 
-| Subsystem Domain | Core Technologies & Protocols | Role in Stack |
-| :--- | :--- | :--- |
-| **Infrastructure & Network** | `Debian 12` `Docker Compose` `Cloudflare Tunnels` `Tailscale` `Nginx` `CI/CD` | Zero-trust ingress, containerization, encrypted mesh overlay |
-| **Backend & Full-Stack** | `TypeScript` `NestJS` `Next.js 15` `Laravel 11` `PostgreSQL` `Prisma` `MinIO` `FastAPI` | REST APIs, Server-Side Rendering, relational data, object storage |
-| **IoT & Embedded Fleets** | `ESP32 / ESP32-CAM` `Raspberry Pi 5` `EMQX MQTT v5` `Laravel Reverb` `OTA Pipelines` | Distributed telemetry capture, live streaming, firmware deployments |
-| **Edge AI & Computer Vision** | `YOLOv8` `ONNX Runtime` `OpenCV` `MAVSDK / MAVLink` `Pixhawk 6C (PX4)` | On-device model execution, target detection, autonomous flight |
+* 💻 **Software & Full-Stack:** Python • TypeScript • JavaScript • Node.js • Next.js 15 • NestJS • Laravel 11 • REST APIs
+* 🔌 **IoT & Embedded Systems:** ESP32 • ESP32-CAM • Raspberry Pi 5 • MQTT (EMQX v5) • WebSockets • Staged OTA Firmware
+* 🤖 **Computer Vision & Robotics:** YOLOv8 • OpenCV • ONNX Runtime • MAVSDK • Pixhawk 6C (PX4 Autopilot) • FastAPI
+* 🌐 **Infrastructure & Cloud:** Linux (Debian 12) • Docker Compose • Cloudflare Tunnels • Tailscale • Nginx • PostgreSQL • MySQL • MinIO S3
 
 ---
 
-## 🛰️ FEATURED PROJECTS
+## 🚀 Featured Projects
 
 ---
 
-### `NODE_01` — Mivion: IoT Surveillance & Fleet Management Platform
+### 📹 Mivion — IoT Surveillance & Device Management Platform
 
-> Real-time IoT surveillance platform designed for managing fleets of edge cameras, ingesting telemetry, and orchestrating staged OTA firmware rollouts.
+> Real-time IoT surveillance and fleet management platform combining ESP32-CAM devices, MQTT messaging, live WebSocket feeds, staged OTA updates, and machine learning inference.
 
 <div align="center">
-  <img src="assets/arch-mivion.svg" alt="Mivion IoT Architecture Diagram" width="100%" />
+  <img src="assets/project-mivion.svg" alt="Mivion IoT Project Animation" width="100%" />
 </div>
 
-* **Decoupled Telemetry & Event Ingestion:** ESP32-CAM devices stream telemetry via MQTT to EMQX v5, while connection webhooks synchronize device state to Laravel 11 for live dashboard broadcasting via WebSockets (Laravel Reverb).
-* **Automated Staged OTA Engine:** Uploads compiled `.bin` firmware binaries to MinIO S3 storage, generates versioned `manifest.json` metadata with SHA256 checksums, and dispatches rollout triggers over MQTT.
-* **Edge Vision & Storage Lifecycle:** Integrates an asynchronous FastAPI service for YOLO object detection postbacks and runs automated scheduled tasks to prune historical MinIO images older than 14 days.
+* **Real-Time Telemetry & Live Feeds:** ESP32-CAM edge cameras publish telemetry over MQTT to EMQX v5, while connection webhooks notify Laravel 11 to broadcast live device states via WebSockets (Laravel Reverb).
+* **Automated Staged OTA Deployments:** Uploads compiled `.bin` firmware artifacts to MinIO S3 object storage with versioned `manifest.json` metadata and SHA256 checksum validation for phased rollouts.
+* **Edge Vision & Storage Lifecycle:** Dispatches uploaded snapshot frames to an asynchronous FastAPI detection service running YOLO human and motion detection, backed by automated scheduled cleanup tasks for 14-day image retention.
 
 ```text
-Stack: Laravel 11 • EMQX v5 (MQTT) • MinIO (S3) • Laravel Reverb • FastAPI • YOLOv8 • Docker • MySQL
+Stack: Laravel 11 • EMQX v5 (MQTT) • MinIO (S3) • Laravel Reverb (WSS) • FastAPI • YOLOv8 • Docker • MySQL 8.0
 ```
 👉 [View Repository →](https://github.com/Eeja07/iot-surveillance-platform-web)
 
 ---
 
-### `NODE_02` — Autonomous Human Search System using Drone
+### 🚁 Autonomous Human Search Drone System
 
-> Autonomous search-and-rescue quadcopter platform integrating a Pixhawk 6C autopilot with an onboard Raspberry Pi 5 companion computer for real-time vision and offboard flight control.
+> Autonomous search-and-rescue quadcopter platform pairing a Pixhawk 6C autopilot with an onboard Raspberry Pi 5 companion computer for real-time edge vision and offboard mission execution.
 
 <div align="center">
-  <img src="assets/arch-drone.svg" alt="Autonomous Drone Search System Architecture" width="100%" />
+  <img src="assets/project-drone.svg" alt="Autonomous Drone Project Animation" width="100%" />
 </div>
 
-* **Companion Computer & Autopilot Integration:** Pairs a Holybro S500 quadcopter airframe and Pixhawk 6C flight controller (PX4) with a Raspberry Pi 5 communicating over high-baud UART via MAVLink.
-* **On-Device Vision Pipeline:** Captures video frames using OpenCV and executes target detection onboard via ONNX Runtime using the `yolov8n320.onnx` model without requiring cloud connectivity.
-* **Offboard Mission Control:** Python-based control service utilizing MAVSDK executes systematic search patterns and coordinates target tracking with live video streaming via Flask.
+* **Autopilot & Companion Integration:** Integrates a Holybro S500 quadcopter airframe and Pixhawk 6C flight controller (PX4) with a Raspberry Pi 5 communicating over high-baud UART via MAVLink.
+* **On-Device Vision Pipeline:** Captures camera frames using OpenCV and executes real-time target detection onboard using ONNX Runtime with the `yolov8n320.onnx` model without cloud dependency.
+* **Autonomous Offboard Control:** Python control daemon powered by MAVSDK commands systematic search sweeps and coordinates target tracking with live video streaming via Flask.
 
 ```text
 Stack: Python • MAVSDK • PX4 Autopilot • Pixhawk 6C • Raspberry Pi 5 • YOLOv8 • ONNX Runtime • OpenCV • Flask
@@ -102,17 +80,17 @@ Stack: Python • MAVSDK • PX4 Autopilot • Pixhawk 6C • Raspberry Pi 5 •
 
 ---
 
-### `NODE_03` — JobTracker Monorepo & API Platform
+### 💼 JobTracker — Application Tracking Monorepo
 
-> Job application tracking platform structured as a TypeScript monorepo with NestJS backend APIs, Next.js frontend, and automated container security scans.
+> Job application tracking platform structured as a TypeScript monorepo with NestJS backend APIs, Next.js 15 frontend, and automated container security scans.
 
 <div align="center">
-  <img src="assets/arch-jobtracker.svg" alt="JobTracker Architecture Diagram" width="100%" />
+  <img src="assets/project-jobtracker.svg" alt="JobTracker Project Animation" width="100%" />
 </div>
 
-* **Turborepo Workspace Architecture:** Modular monorepo isolating `apps/api` (NestJS REST API), `apps/web` (Next.js frontend), and `packages/ui` (shared design tokens and components).
-* **Security & Data Layer:** Passwords secured with memory-hard Argon2id hashing, structured JSON logging via Pino, and relational data management powered by Prisma ORM and PostgreSQL.
-* **Automated CI/CD Quality Gates:** GitHub Actions pipeline enforcing frozen lockfile builds, typechecking (`tsc --noEmit`), automated unit tests, multi-stage Alpine Docker builds, and Trivy container vulnerability scanning.
+* **Turborepo Workspace Architecture:** Modular monorepo cleanly isolating the NestJS REST API (`apps/api`), Next.js 15 client (`apps/web`), and shared UI component package (`packages/ui`).
+* **Security & Data Layer:** Passwords protected with memory-hard Argon2id hashing, structured JSON logging via Pino, and transactional relational data managed with Prisma ORM and PostgreSQL.
+* **Automated CI/CD Quality Pipeline:** GitHub Actions workflow enforcing frozen lockfile builds, typechecks (`tsc --noEmit`), automated unit tests, and multi-stage Alpine Docker builds scanned with Trivy.
 
 ```text
 Stack: NestJS • Next.js 15 • PostgreSQL • Prisma ORM • Turborepo • TypeScript • Docker • Trivy • Pino • Argon2id
@@ -121,93 +99,44 @@ Stack: NestJS • Next.js 15 • PostgreSQL • Prisma ORM • Turborepo • Typ
 
 ---
 
-## 🛠️ SYSTEM INCIDENTS & SOLUTIONS
+## 🌱 Currently Exploring
 
-```text
-INCIDENT #001: ESP32-CAM Stale Socket Exhaustion on Network Disconnect
+Here are a few technical areas and topics I'm currently exploring and actively practicing:
 
-Problem
-ESP32-CAM clients remained in a connected state locally after abrupt Wi-Fi drops,
-failing to receive new MQTT commands or stream telemetry frames.
-
-Investigation
-Unclean network drops without standard TCP FIN packets left half-open sockets active
-on the microcontroller, consuming limited LWIP socket descriptors.
-
-Resolution
-Implemented application-level heartbeat timeouts on the client, exponential backoff
-reconnection logic with explicit socket cleanup, and EMQX webhook client status tracking.
-
-STATUS: RESOLVED
-```
-
-```text
-INCIDENT #002: Companion Computer Inference Latency & Frame Buffering
-
-Problem
-Running standard model inference synchronously inside the video capture loop introduced
-frame pipeline delays and degraded the responsiveness of the offboard control loop.
-
-Investigation
-Synchronous frame ingestion blocked execution between camera I/O and matrix operations,
-causing frame queue latency on the companion computer.
-
-Resolution
-Exported the model to an optimized ONNX format (yolov8n320.onnx) for ONNX Runtime execution
-and decoupled camera ingestion into a dedicated threaded frame reader.
-
-STATUS: RESOLVED
-```
+* 🏗️ **Distributed Systems & Event Streams:** Deepening patterns in event-driven microservices, message queues, and resilient distributed state.
+* 🚀 **DevOps & Cloud-Native Tools:** Experimenting with automated CI/CD deployment pipelines, container orchestration, and self-hosted monitoring.
+* 🤖 **Edge AI Acceleration:** Exploring model quantization and runtime optimizations for low-power ARM and embedded accelerators.
+* 🚁 **Autonomous Robotics & Navigation:** Investigating ROS 2 communication nodes and sensor fusion algorithms for autonomous aerial platforms.
 
 ---
 
-## 🏛️ HOMELAB INFRASTRUCTURE
+## 📊 GitHub Activity
 
 <div align="center">
-  <img src="assets/homelab-topology.svg" alt="Homelab & Cloud Infrastructure Topology" width="100%" />
+
+<img src="https://github-readme-stats.vercel.app/api?username=Eeja07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=38bdf8&icon_color=00e5ff&text_color=94a3b8" height="145" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eeja07&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=a855f7&text_color=94a3b8" height="145" alt="Top Languages" />
+
+<br/><br/>
+
+<!-- 🐍 CONTRIBUTION SNAKE -->
+<img src="assets/contribution-snake.svg" alt="GitHub Contribution Snake" width="100%" />
+
 </div>
+
+---
+
+## 📫 Let's Connect
+
+Feel free to reach out if you'd like to chat about software engineering, IoT, infrastructure, or exciting collaboration opportunities!
+
+* 🌐 **Portfolio Website:** [portfolio.eeja.fun](https://portfolio.eeja.fun)
+* 💼 **LinkedIn:** [linkedin.com/in/mahijapradipta](https://linkedin.com/in/mahijapradipta)
+* 📧 **Email:** [mahijapradipta86@gmail.com](mailto:mahijapradipta86@gmail.com)
+* 🐙 **GitHub:** [github.com/Eeja07](https://github.com/Eeja07)
 
 <br/>
 
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. EDGE INGRESS LAYER                                                  │
-│    • Cloudflare Zero-Trust Tunnel (cloudflared daemon)                 │
-│    • Domain Routing: *.eeja.fun -> Local Container Ports               │
-├────────────────────────────────────────────────────────────────────────┤
-│ 2. SECURE MANAGEMENT OVERLAY                                           │
-│    • Tailscale WireGuard Mesh VPN for encrypted administrative access  │
-├────────────────────────────────────────────────────────────────────────┤
-│ 3. HOST RUNTIME (Debian 12 Bookworm)                                   │
-│    • Docker Compose isolated bridge networks                           │
-│    • Running: Portfolio, EMQX MQTT Broker, MinIO S3, Postgres & MySQL  │
-└────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 📊 SYSTEM ACTIVITY
-
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Eeja07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00e5ff&icon_color=38bdf8&text_color=94a3b8" height="145" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eeja07&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=a855f7&text_color=94a3b8" height="145" alt="Top Languages" />
-
-</div>
-
----
-
-## 📡 CONTACT / DIRECTORY
-
-```bash
-$ connect --target mahija
-[EMAIL]     -> mahijapradipta86@gmail.com
-[PORTFOLIO] -> https://portfolio.eeja.fun
-[GITHUB]    -> https://github.com/Eeja07
-[LINKEDIN]  -> https://linkedin.com/in/mahijapradipta
-[LOCATION]  -> Indonesia (GMT+7)
-```
-
-<div align="center">
-  <sub>Engineered by <b>Mahija Ibad Pradipta</b> • Connected Systems Lab</sub>
+  <sub>Designed &amp; Built by <b>Mahija Ibad Pradipta</b> 👋</sub>
 </div>
