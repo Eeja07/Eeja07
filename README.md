@@ -70,31 +70,19 @@ Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
 <div align="center">
 
 <a href="https://portfolio.eeja.fun">
-  <img src="https://img.shields.io/badge/Portfolio-portfolio.eeja.fun-0d1117?style=for-the-badge&logo=google-chrome&logoColor=38bdf8&labelColor=161b22" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=google-chrome&logoColor=38bdf8&labelColor=161b22" alt="Portfolio" />
 </a>
 &nbsp;
 <a href="https://linkedin.com/in/mahijapradipta">
-  <img src="https://img.shields.io/badge/LinkedIn-Mahija_Ibad_Pradipta-0d1117?style=for-the-badge&logo=linkedin&logoColor=38bdf8&labelColor=161b22" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=38bdf8&labelColor=161b22" alt="LinkedIn" />
 </a>
 &nbsp;
 <a href="mailto:mahijapradipta86@gmail.com">
-  <img src="https://img.shields.io/badge/Email-mahijapradipta86@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=38bdf8&labelColor=161b22" alt="Email" />
+  <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=38bdf8&labelColor=161b22" alt="Email" />
 </a>
 &nbsp;
-<a href="https://github.com/Eeja07">
-  <img src="https://img.shields.io/badge/GitHub-Eeja07-0d1117?style=for-the-badge&logo=github&logoColor=38bdf8&labelColor=161b22" alt="GitHub" />
-</a>
 
 </div>
-
-<!-- <br/> -->
-
-* 🌐 **Portfolio:** [portfolio.eeja.fun](https://portfolio.eeja.fun)
-* 💼 **LinkedIn:** [linkedin.com/in/mahijapradipta](https://linkedin.com/in/mahijapradipta)
-* ✉️ **Email:** [mahijapradipta86@gmail.com](mailto:mahijapradipta86@gmail.com)
-* 🐙 **GitHub:** [github.com/Eeja07](https://github.com/Eeja07)
-
-<!-- <br/> -->
 
 <div align="center">
   <sub>Mahija Ibad Pradipta • Connected Systems &amp; Software</sub>
