@@ -1,89 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="100%" height="100%">
   <defs>
-    <linearGradient id="jt-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1120"/>
+    <linearGradient id="jt-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
       <stop offset="100%" stop-color="#020617"/>
     </linearGradient>
-    <linearGradient id="jt-card-border" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="jt-border" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
   </defs>
 
   <style><![CDATA[
-    .font-mono { font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace; }
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-
-    @keyframes flow-line {
-      0% { stroke-dashoffset: 36; }
-      100% { stroke-dashoffset: 0; }
-    }
-    @keyframes pulse-step {
-      0%, 100% { transform: scale(1); opacity: 0.9; }
-      50% { transform: scale(1.04); opacity: 1; }
-    }
-
-    .pipeline-cable { stroke-dasharray: 6 10; animation: flow-line 1.4s linear infinite; }
-    .step-1 { animation: pulse-step 3s ease-in-out infinite; }
-    .step-2 { animation: pulse-step 3s ease-in-out infinite 1s; }
-    .step-3 { animation: pulse-step 3s ease-in-out infinite 2s; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   ]]></style>
 
-  <rect x="2" y="2" width="896" height="176" rx="12" fill="url(#jt-card-bg)" stroke="url(#jt-card-border)" stroke-width="1.2"/>
+  <!-- Background Card -->
+  <rect x="2" y="2" width="896" height="156" rx="10" fill="url(#jt-bg)" stroke="url(#jt-border)" stroke-width="1.2"/>
 
-  <!-- Top Bar -->
-  <g transform="translate(24, 18)">
-    <circle cx="14" cy="6" r="4.5" fill="#38bdf8"/>
-    <text x="26" y="10" class="font-mono" font-size="10.5" font-weight="700" fill="#38bdf8" letter-spacing="1">WORKFLOW AUTOMATION</text>
-    <text x="220" y="10" class="font-mono" font-size="10" fill="#64748b">TURBOREPO // NESTJS // NEXT.JS 15 // PRISMA</text>
+  <!-- Left Monorepo Emblem -->
+  <g transform="translate(36, 35)">
+    <rect x="0" y="0" width="80" height="85" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="40" y="44" text-anchor="middle" font-size="28">💼</text>
+    <rect x="10" y="58" width="60" height="18" rx="4" fill="#020617" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="40" y="70" text-anchor="middle" class="font-mono" font-size="8" font-weight="700" fill="#38bdf8">TURBOREPO</text>
   </g>
 
-  <!-- ================= 3-STEP PIPELINE VISUAL ================= -->
+  <!-- Connection Arrow -->
+  <g transform="translate(126, 75)">
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+    <polygon points="35,-4 42,0 35,4" fill="#38bdf8"/>
+    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#64748b">REST/AUTH</text>
+  </g>
 
-  <!-- Cable 1 -> 2 -->
-  <path d="M 270 95 L 340 95" fill="none" stroke="#1e293b" stroke-width="3"/>
-  <path d="M 270 95 L 340 95" fill="none" stroke="#38bdf8" stroke-width="3" class="pipeline-cable"/>
-
-  <!-- Cable 2 -> 3 -->
-  <path d="M 570 95 L 640 95" fill="none" stroke="#1e293b" stroke-width="3"/>
-  <path d="M 570 95 L 640 95" fill="none" stroke="#818cf8" stroke-width="3" class="pipeline-cable"/>
-
-  <!-- STEP 1: Application Ingestion (Left) -->
-  <g transform="translate(50, 48)" class="step-1">
-    <rect x="0" y="0" width="220" height="95" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4"/>
-    <circle cx="20" cy="20" r="10" fill="#0284c7"/>
-    <text x="20" y="24" text-anchor="middle" class="font-mono" font-size="10" font-weight="700" fill="#ffffff">01</text>
-    <text x="38" y="24" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Application Intake</text>
+  <!-- Center Architecture Block: Turborepo Workspace Structure -->
+  <g transform="translate(180, 24)">
+    <rect x="0" y="0" width="370" height="110" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1.2"/>
     
-    <text x="16" y="52" class="font-sans" font-size="10" fill="#94a3b8">• Next.js 15 Web Portal</text>
-    <text x="16" y="70" class="font-sans" font-size="10" fill="#94a3b8">• Gmail OAuth2 Ingest</text>
-    <rect x="14" y="76" width="100" height="12" rx="3" fill="#0369a1" opacity="0.3"/>
-    <text x="64" y="85" text-anchor="middle" class="font-mono" font-size="7.5" font-weight="700" fill="#38bdf8">apps/web &amp; api</text>
+    <!-- Header -->
+    <rect x="0" y="0" width="370" height="24" rx="8" fill="#1e293b" opacity="0.6"/>
+    <text x="14" y="16" class="font-mono" font-size="9" font-weight="700" fill="#38bdf8">MONOREPO ARCHITECTURE</text>
+    <text x="355" y="16" text-anchor="end" class="font-mono" font-size="8" fill="#64748b">NESTJS + NEXT.JS 15</text>
+
+    <!-- 3 Internal Service Badges -->
+    <g transform="translate(14, 34)">
+      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8">🌐 apps/web (Next.js 15)</text>
+
+      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#818cf8">⚡ apps/api (NestJS Core)</text>
+    </g>
+
+    <g transform="translate(14, 70)">
+      <rect x="0" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#f8fafc">🎨 packages/ui (Design)</text>
+
+      <rect x="175" y="0" width="165" height="30" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="185" y="19" class="font-mono" font-size="8.5" font-weight="600" fill="#34d399">🐘 PostgreSQL + Prisma</text>
+    </g>
   </g>
 
-  <!-- STEP 2: Processing & Security (Center) -->
-  <g transform="translate(340, 48)" class="step-2">
-    <rect x="0" y="0" width="230" height="95" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1.4"/>
-    <circle cx="20" cy="20" r="10" fill="#4f46e5"/>
-    <text x="20" y="24" text-anchor="middle" class="font-mono" font-size="10" font-weight="700" fill="#ffffff">02</text>
-    <text x="38" y="24" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">NestJS API Core</text>
-
-    <text x="16" y="52" class="font-sans" font-size="10" fill="#94a3b8">• Argon2id Security &amp; Auth</text>
-    <text x="16" y="70" class="font-sans" font-size="10" fill="#94a3b8">• Structured Pino Audit Trail</text>
-    <rect x="14" y="76" width="130" height="12" rx="3" fill="#4338ca" opacity="0.3"/>
-    <text x="79" y="85" text-anchor="middle" class="font-mono" font-size="7.5" font-weight="700" fill="#818cf8">PostgreSQL &amp; Prisma</text>
+  <!-- Connection Arrow -->
+  <g transform="translate(560, 75)">
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#10b981" stroke-width="2" stroke-dasharray="3 3"/>
+    <polygon points="35,-4 42,0 35,4" fill="#10b981"/>
+    <text x="20" y="-8" text-anchor="middle" class="font-mono" font-size="8" fill="#64748b">CI / TRIVY</text>
   </g>
 
-  <!-- STEP 3: Automated Quality & CI (Right) -->
-  <g transform="translate(640, 48)" class="step-3">
-    <rect x="0" y="0" width="220" height="95" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.4"/>
-    <circle cx="20" cy="20" r="10" fill="#059669"/>
-    <text x="20" y="24" text-anchor="middle" class="font-mono" font-size="10" font-weight="700" fill="#ffffff">03</text>
-    <text x="38" y="24" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Automated Delivery</text>
+  <!-- Right Dashboard & Control Block -->
+  <g transform="translate(610, 24)">
+    <rect x="0" y="0" width="250" height="110" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="250" height="24" rx="8" fill="#1e293b" opacity="0.6"/>
+    <circle cx="12" cy="12" r="3" fill="#ef4444"/>
+    <circle cx="20" cy="12" r="3" fill="#f59e0b"/>
+    <circle cx="28" cy="12" r="3" fill="#10b981"/>
+    <text x="40" y="16" class="font-mono" font-size="8.5" fill="#94a3b8">CI/CD Quality Gate</text>
 
-    <text x="16" y="52" class="font-sans" font-size="10" fill="#94a3b8">• Multi-Stage Alpine Build</text>
-    <text x="16" y="70" class="font-sans" font-size="10" fill="#94a3b8">• Trivy Security Scan Gate</text>
-    <rect x="14" y="76" width="115" height="12" rx="3" fill="#065f46" opacity="0.4"/>
-    <text x="71" y="85" text-anchor="middle" class="font-mono" font-size="7.5" font-weight="700" fill="#34d399">CI/CD Pipeline OK</text>
+    <g transform="translate(14, 38)">
+      <text x="0" y="14" class="font-sans" font-size="10" fill="#cbd5e1">• Argon2id Password Hashing</text>
+      <text x="0" y="34" class="font-sans" font-size="10" fill="#cbd5e1">• Multi-Stage Alpine Docker</text>
+      <text x="0" y="54" class="font-sans" font-size="10" fill="#34d399">• Trivy Vulnerability Scanner</text>
+    </g>
   </g>
 </svg>

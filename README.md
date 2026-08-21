@@ -1,24 +1,32 @@
 <div align="center">
 
-<!-- 01. ANIMATED HERO -->
-<img src="assets/hero-banner.svg" alt="Mahija Ibad Pradipta - Developer Portfolio" width="100%" />
+<!-- 01. ANIMATED HEADER -->
+<img src="assets/header.svg" alt="Mahija Ibad Pradipta" width="100%" />
 
 <br/><br/>
 
-<img src="assets/wave-divider.svg" alt="Wave Divider" width="100%" />
+<!-- 02. TYPING ANIMATION -->
+<a href="https://portfolio.eeja.fun">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&height=46&lines=IoT+%26+Embedded+Systems;Full-Stack+Development;Infrastructure+%26+Homelab;Computer+Vision" alt="Typing Animation" />
+</a>
+
+<p align="center">
+  I build projects across software, IoT, infrastructure, and computer vision.
+</p>
 
 </div>
 
+---
+
 ## 👋 About Me
 
-I'm a **Computer Engineering graduate** passionate about building practical systems that connect software, hardware, infrastructure, and intelligent devices.
+I'm a **Computer Engineering graduate** interested in building practical systems across software, infrastructure, IoT, and computer vision.
 
-I enjoy working on end-to-end engineering projects where multiple technologies communicate smoothly — from microcontroller sensor fleets and edge camera streams to full-stack cloud APIs and real-time computer vision models.
+I enjoy working on projects where multiple systems need to communicate and work together — from microcontroller sensor fleets and edge camera streams to full-stack web applications and on-device machine learning models.
 
 ```bash
 $ whoami
 Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
-Interests: IoT Systems • Full-Stack Development • Self-Hosted Infrastructure • Edge Computer Vision
 ```
 
 ---
@@ -31,10 +39,10 @@ Interests: IoT Systems • Full-Stack Development • Self-Hosted Infrastructure
 
 <br/>
 
-* 💻 **Software & Full-Stack:** Python • TypeScript • JavaScript • Node.js • Next.js 15 • NestJS • Laravel 11 • REST APIs
-* 🔌 **IoT & Embedded Systems:** ESP32 • ESP32-CAM • Raspberry Pi 5 • MQTT (EMQX v5) • WebSockets • Staged OTA Firmware
-* 🤖 **Computer Vision & Robotics:** YOLOv8 • OpenCV • ONNX Runtime • MAVSDK • Pixhawk 6C (PX4 Autopilot) • FastAPI
-* 🌐 **Infrastructure & Cloud:** Linux (Debian 12) • Docker Compose • Cloudflare Tunnels • Tailscale • Nginx • PostgreSQL • MySQL • MinIO S3
+* 💻 **Software:** Python • JavaScript • TypeScript • Node.js • Next.js • NestJS • Laravel
+* 🔌 **IoT & Embedded:** ESP32 • ESP32-CAM • Raspberry Pi • MQTT
+* 🤖 **Computer Vision:** YOLO • OpenCV • ONNX Runtime
+* 🌐 **Infrastructure:** Linux • Docker • Cloudflare • Tailscale • Nginx • PostgreSQL • MySQL
 
 ---
 
@@ -42,12 +50,12 @@ Interests: IoT Systems • Full-Stack Development • Self-Hosted Infrastructure
 
 ---
 
-### 📹 Mivion — IoT Surveillance & Device Management Platform
+### 📹 Mivion — IoT Surveillance & Fleet Platform
 
-> Real-time IoT surveillance and fleet management platform combining ESP32-CAM devices, MQTT messaging, live WebSocket feeds, staged OTA updates, and machine learning inference.
+> Real-time IoT surveillance and device management platform combining ESP32-CAM devices, MQTT communication, live WebSocket feeds, staged OTA updates, and computer vision.
 
 <div align="center">
-  <img src="assets/project-mivion.svg" alt="Mivion IoT Project Animation" width="100%" />
+  <img src="assets/project-mivion.svg" alt="Mivion IoT Architecture" width="100%" />
 </div>
 
 * **Real-Time Telemetry & Live Feeds:** ESP32-CAM edge cameras publish telemetry over MQTT to EMQX v5, while connection webhooks notify Laravel 11 to broadcast live device states via WebSockets (Laravel Reverb).
@@ -61,17 +69,17 @@ Stack: Laravel 11 • EMQX v5 (MQTT) • MinIO (S3) • Laravel Reverb (WSS) •
 
 ---
 
-### 🚁 Autonomous Human Search Drone System
+### 🚁 Autonomous Human Search Drone
 
-> Autonomous search-and-rescue quadcopter platform pairing a Pixhawk 6C autopilot with an onboard Raspberry Pi 5 companion computer for real-time edge vision and offboard mission execution.
+> Autonomous search-and-rescue quadcopter platform pairing a Pixhawk 6C autopilot with an onboard Raspberry Pi 5 companion computer for real-time edge vision and offboard flight control.
 
 <div align="center">
-  <img src="assets/project-drone.svg" alt="Autonomous Drone Project Animation" width="100%" />
+  <img src="assets/project-drone.svg" alt="Autonomous Drone Architecture" width="100%" />
 </div>
 
 * **Autopilot & Companion Integration:** Integrates a Holybro S500 quadcopter airframe and Pixhawk 6C flight controller (PX4) with a Raspberry Pi 5 communicating over high-baud UART via MAVLink.
 * **On-Device Vision Pipeline:** Captures camera frames using OpenCV and executes real-time target detection onboard using ONNX Runtime with the `yolov8n320.onnx` model without cloud dependency.
-* **Autonomous Offboard Control:** Python control daemon powered by MAVSDK commands systematic search sweeps and coordinates target tracking with live video streaming via Flask.
+* **Autonomous Offboard Flight:** Python control daemon powered by MAVSDK commands systematic search sweeps and coordinates target tracking with live video streaming via Flask.
 
 ```text
 Stack: Python • MAVSDK • PX4 Autopilot • Pixhawk 6C • Raspberry Pi 5 • YOLOv8 • ONNX Runtime • OpenCV • Flask
@@ -85,7 +93,7 @@ Stack: Python • MAVSDK • PX4 Autopilot • Pixhawk 6C • Raspberry Pi 5 •
 > Job application tracking platform structured as a TypeScript monorepo with NestJS backend APIs, Next.js 15 frontend, and automated container security scans.
 
 <div align="center">
-  <img src="assets/project-jobtracker.svg" alt="JobTracker Project Animation" width="100%" />
+  <img src="assets/project-jobtracker.svg" alt="JobTracker Architecture" width="100%" />
 </div>
 
 * **Turborepo Workspace Architecture:** Modular monorepo cleanly isolating the NestJS REST API (`apps/api`), Next.js 15 client (`apps/web`), and shared UI component package (`packages/ui`).
@@ -99,14 +107,12 @@ Stack: NestJS • Next.js 15 • PostgreSQL • Prisma ORM • Turborepo • Typ
 
 ---
 
-## 🌱 Currently Exploring
+## 🌱 Currently Learning
 
-Here are a few technical areas and topics I'm currently exploring and actively practicing:
-
-* 🏗️ **Distributed Systems & Event Streams:** Deepening patterns in event-driven microservices, message queues, and resilient distributed state.
-* 🚀 **DevOps & Cloud-Native Tools:** Experimenting with automated CI/CD deployment pipelines, container orchestration, and self-hosted monitoring.
-* 🤖 **Edge AI Acceleration:** Exploring model quantization and runtime optimizations for low-power ARM and embedded accelerators.
-* 🚁 **Autonomous Robotics & Navigation:** Investigating ROS 2 communication nodes and sensor fusion algorithms for autonomous aerial platforms.
+* 🏗️ **System Architecture:** Distributed systems, scalable microservices, and message-driven state management.
+* 🚀 **DevOps & Deployment:** CI/CD automation, container orchestration, and reproducible deployment workflows.
+* 🤖 **Computer Vision Optimization:** Model quantization, pruning, and runtime performance on embedded edge hardware.
+* 🚁 **Robotics & Autonomous Systems:** ROS 2 communication patterns and sensor fusion algorithms.
 
 ---
 
@@ -117,18 +123,21 @@ Here are a few technical areas and topics I'm currently exploring and actively p
 <img src="https://github-readme-stats.vercel.app/api?username=Eeja07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=38bdf8&icon_color=00e5ff&text_color=94a3b8" height="145" alt="GitHub Stats" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eeja07&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=a855f7&text_color=94a3b8" height="145" alt="Top Languages" />
 
-<br/><br/>
+</div>
 
-<!-- 🐍 CONTRIBUTION SNAKE -->
-<img src="assets/contribution-snake.svg" alt="GitHub Contribution Snake" width="100%" />
+---
 
+## 🐍 Contribution Snake
+
+<div align="center">
+  <img src="assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 </div>
 
 ---
 
 ## 📫 Let's Connect
 
-Feel free to reach out if you'd like to chat about software engineering, IoT, infrastructure, or exciting collaboration opportunities!
+Feel free to reach out if you'd like to discuss software engineering, IoT systems, or new project collaborations!
 
 * 🌐 **Portfolio Website:** [portfolio.eeja.fun](https://portfolio.eeja.fun)
 * 💼 **LinkedIn:** [linkedin.com/in/mahijapradipta](https://linkedin.com/in/mahijapradipta)
