@@ -1,0 +1,29 @@
+name: Profile Telemetry & Metrics
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  telemetry-check:
+    name: System Telemetry Diagnostics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Profile Repository
+        uses: actions/checkout@v4
+
+      - name: Validate SVG XML Schema
+        run: |
+          python3 -c "import xml.etree.ElementTree as ET, glob; [ET.parse(f) for f in glob.glob('assets/*.svg')]; print('✓ All system SVGs are syntactically valid XML!')"
+
+      - name: Verify Asset Paths & Links
+        run: |
+          python3 -c "import os, re; text=open('README.md').read(); links=re.findall(r'assets/[\w\-\.]+', text); missing=[l for l in set(links) if not os.path.exists(l)]; assert not missing, f'Missing assets: {missing}'; print(f'✓ All {len(set(links))} referenced assets exist on disk!')"
