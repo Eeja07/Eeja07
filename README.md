@@ -130,7 +130,7 @@ Stack: NestJS • Next.js 15 • PostgreSQL • Prisma ORM • Turborepo • Typ
 ## 🐍 Contribution Snake
 
 <div align="center">
-  <img src="assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
+  <img src="https://raw.githubusercontent.com/Eeja07/Eeja07/output/github-snake-dark.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 </div>
 
 ---
