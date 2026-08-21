@@ -83,7 +83,3 @@ Mahija Ibad Pradipta (Eeja07) • Computer Engineering Graduate
 &nbsp;
 
 </div>
-
-<div align="center">
-  <sub>Mahija Ibad Pradipta • Connected Systems &amp; Software</sub>
-</div>
